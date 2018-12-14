@@ -1,0 +1,22 @@
+{
+  "name": "stephen_jenny",
+  "version": "1.0.0",
+  "description": "Stephen and Jenny's Wedding Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennypoon/react_wed.git"
+  },
+  "author": "Jenny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jennypoon/react_wed/issues"
+  },
+  "homepage": "https://github.com/jennypoon/react_wed#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
