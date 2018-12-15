@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SideImages from "./components/SideImages.jsx";
+import Countdown from "./components/Countdown.jsx";
 import OurStory from "./components/OurStory.jsx";
 import Venue from "./components/Venue.jsx";
 import Schedule from "./components/Schedule.jsx";
@@ -41,6 +42,7 @@ class App extends Component {
     return (
       <div>
         <SideImages />
+        <Countdown />
         { tabs }
       </div>
     );
