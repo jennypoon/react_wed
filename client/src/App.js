@@ -12,6 +12,9 @@ import './App.css';
 class App extends Component {
   render() {
 
+    const currentDate = new Date();
+    const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
+
     const tabs = (
       <div class="tabStyle">
         <Tabs>
@@ -42,7 +45,7 @@ class App extends Component {
     return (
       <div>
         <SideImages />
-        <Countdown />
+        <Countdown date={`${year}-12-24T00:00:00`} />
         { tabs }
       </div>
     );
