@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+
 .App {
   text-align: center;
+}
+
+.tabStyle {
+  font-family: 'Julius Sans One', sans-serif;
+  letter-spacing: -0.05em;
+  margin-left: 50%;
+  margin-top: 5%;
+  width: 50%;
+}
+
+h1 {
+  font-family: 'Francois One', sans-serif;
+  letter-spacing: 0.05em;
 }
 
 .App-logo {
