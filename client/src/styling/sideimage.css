@@ -1,0 +1,10 @@
+.sideimage {
+  position: fixed;
+  top: -50%;
+  left: -10%;
+  width: 55%;
+  height: 200%;
+  background-image: url(../images/cityline.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,10 +1,9 @@
 import React from 'react';
-import image from '../images/cityline.jpeg'
+import '../styling/sideimage.css';
 
 function SideImage() {
     return (
       <div className="sideimage">
-        <img src={image} alt="engagement - cityline"/>
       </div>
     )
 }
