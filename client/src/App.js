@@ -6,17 +6,16 @@ import Venue from "./components/Venue.jsx";
 import Schedule from "./components/Schedule.jsx";
 import RSVP from "./components/RSVP.jsx";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
 import "react-tabs/style/react-tabs.css";
+import "./styling/tabs.css"
 import './App.css';
 
 class App extends Component {
   render() {
 
-    const currentDate = new Date();
-    const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
-
     const tabs = (
-      <div class="tabStyle">
+      <div className="tabStyle">
         <Tabs>
           <TabList>
             <Tab> Our Story </Tab>
@@ -41,11 +40,10 @@ class App extends Component {
       </div>
       )
 
-
     return (
       <div>
+        <Countdown date="2019-08-24T00:00:00" />
         <SideImages />
-        <Countdown date={`${year}-12-24T00:00:00`} />
         { tabs }
       </div>
     );

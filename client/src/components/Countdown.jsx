@@ -1,4 +1,6 @@
 import React, { PropTypes, Component } from 'react';
+import '../styling/countdown.css';
+
 
 class Countdown extends Component {
   constructor(props) {
@@ -15,7 +17,7 @@ class Countdown extends Component {
   componentDidMount() {
     // update every second
     this.interval = setInterval(() => {
-      const date = this.calculateCountdown(this.props.date);
+      const date = this.calculateCountdown("2019-08-24T00:00:00");
       date ? this.setState(date) : this.stop();
     }, 1000);
   }
