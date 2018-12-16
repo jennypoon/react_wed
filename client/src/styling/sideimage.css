@@ -8,3 +8,13 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media screen and (max-width: 800px) {
+  .sideimage {
+  min-width: 200%; /* The width is 100%, when the viewport is 800px or smaller */
+  top: -20%;
+  left: -45%;
+  height: 80%;
+
+  }
+}
