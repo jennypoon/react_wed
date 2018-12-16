@@ -43,6 +43,7 @@ class App extends Component {
     return (
       <div>
         <SideImages />
+        { tabs }
       </div>
     );
   }
