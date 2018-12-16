@@ -10,8 +10,19 @@
   .tabStyle {
     display: block;
     width: 100%;
-    margin-top: 60%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 450px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .tabStyle {
+    display: block;
+    width: 100%;
+    margin-top: 260px;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: 3vw;
   }
 }

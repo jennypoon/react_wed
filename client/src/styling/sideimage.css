@@ -18,3 +18,14 @@
     height: 50%;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .sideimage {
+    display: block;
+    background-size: cover;
+    min-width: 200%;
+    top: 0%;
+    left: -45%;
+    height: 30%;
+  }
+}
