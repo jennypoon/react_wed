@@ -1,0 +1,38 @@
+.vertical-timeline-element-content {
+  border: grey solid 0.5px;
+}
+
+.vertical-timeline::before {
+  width: 1px;
+  background-color: grey;
+  margin: -18px;
+}
+
+/*@media screen and (max-width: 1170) {
+
+  .vertical-timeline::before {
+    margin: -18px;
+  }
+}*/
+
+
+.vertical-timeline-element-icon {
+  background-color: #FFD3D9;
+  margin: 10px;
+  width: 10px;
+  height: 10px;
+  box-shadow: 0px;
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element-icon {
+  background-color: #FFD3D9;
+  margin: -5px;
+  width: 10px;
+  height: 10px;
+  box-shadow: 0px;
+}
+
+.vertical-timeline-element-icon bounce-in {
+  margin: 14px;
+  box-shadow: 0px;
+}

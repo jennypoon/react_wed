@@ -1,6 +1,7 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import '../styling/timeline.css'
 
 
 function OurStory() {
@@ -9,7 +10,8 @@ function OurStory() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2011 - present"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          // iconStyle={{ background: '#FFD3D9', color: '#fff' }}
+          // style={{width: '100%'}}
           // icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">Creative Director</h3>
@@ -20,7 +22,7 @@ function OurStory() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2010 - 2011"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          // iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           // icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">Art Director</h3>
@@ -32,7 +34,7 @@ function OurStory() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2008 - 2010"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          // iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           // icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">Web Designer</h3>
@@ -43,7 +45,7 @@ function OurStory() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2006 - 2008"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          // iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           // icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">Web Designer</h3>
@@ -52,9 +54,9 @@ function OurStory() {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
+          className="vertical-timeline-element--education eventBox"
           date="April 2013"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+          // iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
           // icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
@@ -65,7 +67,7 @@ function OurStory() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="November 2012"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+          // iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
           // icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
@@ -76,7 +78,7 @@ function OurStory() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2002 - 2006"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+          // iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
           // icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
@@ -86,7 +88,7 @@ function OurStory() {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+          // iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
           // icon={<StarIcon />}
         />
       </VerticalTimeline>
