@@ -1,5 +1,10 @@
+
 .vertical-timeline-element-content {
   border: grey solid 0.5px;
+  top: 0; bottom: 0; left: 0; right: 0;
+  background-image: url(../images/background.jpg);
+  background-color: transparent;
+  background-position: cover;
 }
 
 .vertical-timeline::before {
@@ -34,9 +39,11 @@ display: none;
   padding-right: 10px;
 }
 
-
-
 .vertical-timeline-element-date {
   font-style: bold;
   margin-left: 10px
+}
+
+.vertical-timeline-element--work {
+  /*background-image: url(../images/background.jpg)*/
 }

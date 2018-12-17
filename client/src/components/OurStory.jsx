@@ -3,13 +3,13 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import '../styling/timeline.css'
 
-
 function OurStory() {
     return (
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="April 15, 2012 --- commentary ---  Jenny: I think we bonded over the fact we were both from Surrey...like what are the chances?!"
+          style={{ backgroundImage: `url(require("../images/background.jpg")}` } }
         >
           <h4 className="vertical-timeline-element-subtitle">First Encounter </h4>
           <p>
