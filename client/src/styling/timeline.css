@@ -8,14 +8,6 @@
   margin: -18px;
 }
 
-/*@media screen and (max-width: 1170) {
-
-  .vertical-timeline::before {
-    margin: -18px;
-  }
-}*/
-
-
 .vertical-timeline-element-icon {
   background-color: #FFD3D9;
   margin: 10px;
@@ -30,9 +22,21 @@
   width: 10px;
   height: 10px;
   box-shadow: 0px;
+  padding: 0px;
 }
 
-.vertical-timeline-element-icon bounce-in {
-  margin: 14px;
-  box-shadow: 0px;
+.vertical-timeline--two-columns .vertical-timeline-element-content::before {
+display: none;
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element-content {
+  padding: 8px;
+  padding-right: 10px;
+}
+
+
+
+.vertical-timeline-element-date {
+  font-style: bold;
+  margin-left: 10px
 }
