@@ -25,7 +25,9 @@ class App extends Component {
           </TabList>
 
           <TabPanel>
-            <OurStory />
+            <div className="storyComponent">
+              <OurStory />
+            </div>
           </TabPanel>
           <TabPanel>
             <Venue />

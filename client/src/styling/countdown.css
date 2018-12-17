@@ -1,7 +1,7 @@
 .Countdown {
-  position: relative;
+  position: absolute;
   display: block;
-  float: right;
+  float: left;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1vw;
   margin-top: 10px;

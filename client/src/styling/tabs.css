@@ -1,4 +1,5 @@
 .tabStyle {
+  position: absolute;
   font-family: 'Julius Sans One', sans-serif;
   letter-spacing: -0.05em;
   margin-left: 50%;
