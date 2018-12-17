@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
 
+html {
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
 }
