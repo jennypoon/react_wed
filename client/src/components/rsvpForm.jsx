@@ -6,19 +6,15 @@ class RsvpForm extends Component {
     super(props);
 
     this.state = {
-      selectedOption: "",
+      selectedOption: "1",
     };
 
-    this.handleClick = this.handleClick.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleOptionChange = this.handleOptionChange.bind(this);
 
   }
 
-  handleChange(event) {
-    this.setState({ rsvp: true });
-  }
 
   handleChange(event) {
     event.preventDefault();
@@ -59,7 +55,7 @@ class RsvpForm extends Component {
           </label>
 
           <br/><br/>
-            {this.prop.selectedOption === "1" ? (
+            {this.state.selectedOption === "1" ? (
               <form className="rsvpForm" onSubmit={this.handleSubmit}>
                 <label className="rsvpColumn">
                   First & Last Name:
@@ -86,10 +82,9 @@ class RsvpForm extends Component {
                 </label>
                 <input className="rsvpColumn comment" type="text" name="comments" onChange={this.handleChange}></input><br/>
                 </form> )
-            : "" }
-            )};
+            : "Sorry to hear that you can't make it to our special day!" }
           </div>
-)}
+      )}
 }
 
 export default RsvpForm;

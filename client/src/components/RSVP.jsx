@@ -7,46 +7,34 @@ class RSVP extends Component {
     super(props);
 
     this.state = {
-      selectedOption: "",
       rsvp: ""
     };
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleOptionChange = this.handleOptionChange.bind(this);
-
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleChange(event) {
+  handleClick(event) {
     this.setState({ rsvp: true });
   }
 
-  handleChange(event) {
-    event.preventDefault();
-    this.setState({ [event.target.name]: event.target.value });
-  }
-
-  handleOptionChange(event) {
-    this.setState({ selectedOption: event.target.value });
-  }
-
-  handleSubmit(event){
-    event.preventDefault();
-
-  }
 
   render() {
     console.log(this.state)
 
     return (
       <div className="rsvpForm">
-        {this.state.rsvp ? ("You have already RSVP!"
+        {this.state.rsvp ? (
+          <div>
+            <h3>Your RSVP has been sent! Thank You!</h3>
+            <p>If you need to make changes, just send another RSVP and we'll use the latest one</p>
+            <p>If you have any questions, email us at: jenny.poon@live.ca or call us at 604-716-7891</p>
+          </div>
           ) : (
           <div>
-          <RsvpForm selectedOption={this.state.selectedOption}/>
-          <button onClick={this.handleClick}> Submit your RSVP! </button>
+            <RsvpForm/>
+            <button onClick={this.handleClick}> Submit your RSVP! </button>
           </div>
-        )};
+        )}
       </div>
   )}
 }
