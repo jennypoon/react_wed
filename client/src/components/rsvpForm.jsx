@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import "../styling/rsvp.css"
 
 class RsvpForm extends Component {
  constructor(props) {
@@ -33,7 +32,7 @@ class RsvpForm extends Component {
   render() {
 
     return (
-      <div className="rsvpForm">
+      <div>
           <label className="left">
             Can you make it?
           </label>
@@ -60,28 +59,28 @@ class RsvpForm extends Component {
                 <label className="rsvpColumn">
                   First & Last Name:
                 </label>
-                <input className="rsvpColumn" type="text" name="name" onChange={this.handleChange}></input><br/>
+                <input className="rsvpColumn input" type="text" name="name" onChange={this.handleChange}></input><br/><br/>
 
                 <label className="rsvpColumn">
                   Email:
                 </label>
-                <input className="rsvpColumn" type="text" name="email" onChange={this.handleChange}></input><br/>
+                <input className="rsvpColumn input" type="text" name="email" onChange={this.handleChange}></input><br/><br/>
 
                 <label className="rsvpColumn">
                   Plus 1's Name(s):
                 </label>
-                <input className="rsvpColumn" type="text" name="plusName" onChange={this.handleChange}></input><br/>
+                <input className="rsvpColumn input" type="text" name="plusName" onChange={this.handleChange}></input><br/><br/>
 
                 <label className="rsvpColumn">
                  Song Requests:
                 </label>
-                <input className="rsvpColumn" type="text" name="songs" onChange={this.handleChange}></input><br/>
+                <input className="rsvpColumn input" type="text" name="songs" onChange={this.handleChange}></input><br/><br/>
 
                  <label className="rsvpColumn">
                  Comments:
                 </label>
-                <input className="rsvpColumn comment" type="text" name="comments" onChange={this.handleChange}></input><br/>
-                </form> )
+                <input className="rsvpColumn comment" type="text" name="comments" onChange={this.handleChange}></input><br/><br/>
+              </form> )
             : "Sorry to hear that you can't make it to our special day!" }
           </div>
       )}

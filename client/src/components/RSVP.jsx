@@ -22,7 +22,7 @@ class RSVP extends Component {
     console.log(this.state)
 
     return (
-      <div className="rsvpForm">
+      <div className="rsvpComponent">
         {this.state.rsvp ? (
           <div>
             <h3>Your RSVP has been sent! Thank You!</h3>
@@ -32,7 +32,7 @@ class RSVP extends Component {
           ) : (
           <div>
             <RsvpForm/>
-            <button onClick={this.handleClick}> Submit your RSVP! </button>
+            <button className="rsvpButton" onClick={this.handleClick}> Submit your RSVP! </button>
           </div>
         )}
       </div>
