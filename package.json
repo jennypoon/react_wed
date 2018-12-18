@@ -19,8 +19,11 @@
   },
   "homepage": "https://github.com/jennypoon/react_wed#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "create-react-app": "^2.1.1",
     "express": "^4.16.4",
+    "knex": "^0.16.2",
+    "morgan": "^1.9.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-tabs": "^2.3.0",
