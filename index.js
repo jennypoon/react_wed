@@ -1,5 +1,8 @@
 require('dotenv').config();
 
+const env = process.env.ENV || 'development';
+
+
 const express = require('express');
 const path = require('path');
 const logger = require('morgan');
@@ -10,6 +13,7 @@ const app = express();
 //DATABASE
 const knexConfig = require('./knexfile');
 const knex = require('knex')(knexConfig[env]);
+
 
 //-----------------//
 
