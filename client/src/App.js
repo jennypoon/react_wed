@@ -22,6 +22,8 @@ class App extends Component {
             <Tab> The Venue </Tab>
             <Tab> Schedule </Tab>
             <Tab> RSVP </Tab>
+            <Tab> Team </Tab>
+            <Tab> FAQs </Tab>
           </TabList>
 
           <TabPanel>
