@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
 import "../styling/rsvp.css"
+import RsvpForm from "../components/rsvpForm.jsx"
 
 class RSVP extends Component {
  constructor(props) {
     super(props);
 
     this.state = {
-      selectedOption: ""
+      selectedOption: "",
+      rsvp: ""
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleOptionChange = this.handleOptionChange.bind(this);
 
+  }
+
+  handleChange(event) {
+    this.setState({ rsvp: true });
   }
 
   handleChange(event) {
@@ -30,47 +36,19 @@ class RSVP extends Component {
   }
 
   render() {
+    console.log(this.state)
 
     return (
-      <div>
-        <label className="left">
-          Can you make it?
-        </label>
-        <label className="right">
-          Yes! Count me in!
-            <input type="radio" name="Yes" value="1"
-              checked={this.state.selectedOption === "1"}
-              onChange={this.handleOptionChange}
-            />
-        </label>
-        <label className="right">
-          Sorry, can't make it
-            <input type="radio" name ="No" value="0"
-              checked={this.state.selectedOption === "0"}
-              onChange={this.handleOptionChange}
-            />
-        </label>
-        <br/>
-          {this.state.selectedOption === "1" ? (
-            <form onSubmit={this.handleSubmit}>
-            <label>
-              First and Last Name:
-              <input className="register" type="text" name="name" onChange={this.handleChange}></input>
-            </label>
-
-            <label>
-              Email:
-              <input className="register" type="text" name="email" onChange={this.handleChange}></input>
-            </label>
-
-            <label>
-              Number of Seats:
-              <input className="register" type="text" name="email" onChange={this.handleChange}></input>
-            </label>
-            </form> )
-          : "" }
-        </div>
-      )};
+      <div className="rsvpForm">
+        {this.state.rsvp ? ("You have already RSVP!"
+          ) : (
+          <div>
+          <RsvpForm selectedOption={this.state.selectedOption}/>
+          <button onClick={this.handleClick}> Submit your RSVP! </button>
+          </div>
+        )};
+      </div>
+  )}
 }
 
 export default RSVP;
