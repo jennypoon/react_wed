@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "../styling/rsvp.css"
 
 class RSVP extends Component {
  constructor(props) {
@@ -20,7 +21,7 @@ class RSVP extends Component {
   }
 
   handleOptionChange(event) {
-    this.setState({ selectedOption: event.target.value }, console.log(this.state));
+    this.setState({ selectedOption: event.target.value });
   }
 
   handleSubmit(event){
@@ -32,34 +33,42 @@ class RSVP extends Component {
 
     return (
       <div>
-          <form onSubmit={this.handleSubmit}>
+        <label className="left">
+          Can you make it?
+        </label>
+        <label className="right">
+          Yes! Count me in!
+            <input type="radio" name="Yes" value="1"
+              checked={this.state.selectedOption === "1"}
+              onChange={this.handleOptionChange}
+            />
+        </label>
+        <label className="right">
+          Sorry, can't make it
+            <input type="radio" name ="No" value="0"
+              checked={this.state.selectedOption === "0"}
+              onChange={this.handleOptionChange}
+            />
+        </label>
+        <br/>
+          {this.state.selectedOption === "1" ? (
+            <form onSubmit={this.handleSubmit}>
             <label>
-            Are you coming? <br/>
-            Yes
-              <input type="radio" name="Yes" value="1"
-                checked={this.state.selectedOption === "1"}
-                onChange={this.handleOptionChange}
-              />
-            No
-              <input type="radio" name ="No" value="0"
-                checked={this.state.selectedOption === "0"}
-                onChange={this.handleOptionChange}
-              />
+              First and Last Name:
+              <input className="register" type="text" name="name" onChange={this.handleChange}></input>
+            </label>
 
-          </label>
-              <label>
-                First and Last Name:
-                <input className="register" type="text" name="name" onChange={this.handleChange}></input>
-              </label>
-              <label>
-                Email:
-                <input className="register" type="text" name="email" onChange={this.handleChange}></input>
-              </label>
-              <label>
-                Number of Seats:
-                <input className="register" type="text" name="email" onChange={this.handleChange}></input>
-              </label>
-              </form>
+            <label>
+              Email:
+              <input className="register" type="text" name="email" onChange={this.handleChange}></input>
+            </label>
+
+            <label>
+              Number of Seats:
+              <input className="register" type="text" name="email" onChange={this.handleChange}></input>
+            </label>
+            </form> )
+          : "" }
         </div>
       )};
 }
