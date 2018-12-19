@@ -23,7 +23,7 @@ class Admin extends Component {
 
   displayList(list) {
     console.log("inside displayList function", list)
-    list.forEach((guest) => {
+    return (list.map((guest) => {
       return(
         <tr>
           <td>{ guest.id }</td>
@@ -35,7 +35,7 @@ class Admin extends Component {
         </tr>
         )
     })
-  }
+  )}
 
   componentDidMount() {
     this.getList();
