@@ -1,54 +1,27 @@
-import React, { Component } from 'react';
-import SideImages from "./components/SideImages.jsx";
-import Countdown from "./components/Countdown.jsx";
-import OurStory from "./components/OurStory.jsx";
-import Venue from "./components/Venue.jsx";
-import Schedule from "./components/Schedule.jsx";
-import RSVP from "./components/RSVP.jsx";
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import React, { Component } from 'react';;
 
-import "react-tabs/style/react-tabs.css";
-import "./styling/tabs.css"
-import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import Admin from './Admin.jsx';
+import Home from './Home.jsx';
+
 
 class App extends Component {
   render() {
 
-    const tabs = (
-      <div className="tabStyle">
-        <Tabs>
-          <TabList>
-            <Tab> Our Story </Tab>
-            <Tab> The Venue </Tab>
-            <Tab> Schedule </Tab>
-            <Tab> RSVP </Tab>
-            <Tab> Team </Tab>
-            <Tab> FAQs </Tab>
-          </TabList>
-
-          <TabPanel>
-            <div className="storyComponent">
-              <OurStory />
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <Venue />
-          </TabPanel>
-          <TabPanel>
-            <Schedule />
-          </TabPanel>
-          <TabPanel>
-            <RSVP />
-          </TabPanel>
-        </Tabs>
+  const App = () => (
+      <div>
+        <Switch>
+          <Route exact path='/' name="home" render={(props) => <Home {...props} />} />
+          <Route path='/rsvp/admin' component={ Admin } />
+        </Switch>
       </div>
-      )
+  )
 
     return (
       <div>
-        <Countdown date="2019-08-24T00:00:00" />
-        <SideImages />
-        { tabs }
+        <Switch>
+          <App/>
+        </Switch>
       </div>
     );
   }
