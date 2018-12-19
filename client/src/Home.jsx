@@ -41,6 +41,12 @@ class Home extends Component {
           <TabPanel>
             <RSVP />
           </TabPanel>
+          <TabPanel>
+            <RSVP />
+          </TabPanel>
+          <TabPanel>
+            <RSVP />
+          </TabPanel>
         </Tabs>
       </div>
       )

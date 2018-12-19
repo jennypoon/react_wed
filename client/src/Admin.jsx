@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import './styling/admin.css'
 
 
 class Admin extends Component {
@@ -25,7 +26,7 @@ class Admin extends Component {
     console.log("inside displayList function", list)
     return (list.map((guest) => {
       return(
-        <tr>
+        <tr key={ guest.id }>
           <td>{ guest.id }</td>
           <td>{ guest.name }</td>
           <td>{ guest.email }</td>
