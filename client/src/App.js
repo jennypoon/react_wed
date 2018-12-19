@@ -1,8 +1,7 @@
-import React, { Component } from 'react';;
-
-import { Route, Switch } from 'react-router-dom';
 import Admin from './Admin.jsx';
 import Home from './Home.jsx';
+import { Route, Switch } from 'react-router-dom';
+import React, { Component } from 'react';;
 
 
 class App extends Component {
