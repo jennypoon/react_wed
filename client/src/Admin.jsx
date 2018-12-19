@@ -11,14 +11,30 @@ class Admin extends Component {
     }
 
     this.getList = this.getList.bind(this)
+    this.displayList = this.displayList.bind(this)
   }
 
   getList() {
     axios.get("/api/admin")
       .then((res) => {
-        console.log(typeof res.data, res.data)
-        this.setState({ list: res.data })
+        this.setState({ list: res.data})
       })
+  }
+
+  displayList(list) {
+    console.log("inside displayList function", list)
+    list.forEach((guest) => {
+      return(
+        <tr>
+          <td>{ guest.id }</td>
+          <td>{ guest.name }</td>
+          <td>{ guest.email }</td>
+          <td>{ guest.plus_one }</td>
+          <td>{ guest.song_requests }</td>
+          <td>{ guest.comments }</td>
+        </tr>
+        )
+    })
   }
 
   componentDidMount() {
@@ -31,9 +47,27 @@ class Admin extends Component {
     return (
       <div className="admin">
         <h1>RSVP List</h1>
+        <table>
+          <tbody>
+           <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Plus Ones</th>
+            <th>Song Requests</th>
+            <th>Comments</th>
+          </tr>
+          { this.displayList(list) }
+          </tbody>
+        </table>
       </div>
     );
   }
 }
+
+
+
+
+
 
 export default Admin;
