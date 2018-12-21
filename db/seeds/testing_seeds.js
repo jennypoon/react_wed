@@ -5,14 +5,14 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('registration').insert([
-        { id: 1,
+        {
           name: 'person1',
           email: 'email1',
           plus_one:'person1a, person1b',
           song_requests: 'song1',
           comments: 'testing'
         },
-        { id: 2,
+        {
           name: 'person2',
           email: 'email2',
           plus_one:'person2a, person2b',
