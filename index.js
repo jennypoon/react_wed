@@ -44,6 +44,18 @@ app.get('/api/rsvp', (req,res) => {
 app.post('/api/rsvp', (req,res) => {
   console.log("POST API CALL")
   console.log("req.body", req.body)
+  knex('registration')
+    .insert({
+      name: req.body.name,
+      email: req.body.email,
+      plusone: req.body.plusName,
+      rsvp: req.body.selectedOption,
+      comments: req.body..comments,
+      songs: req.body.songs
+    })
+    .then((data) => {
+      res.json("Successfully inserted")
+    })
 });
 
 // The "catchall" handler: for any request that doesn't
