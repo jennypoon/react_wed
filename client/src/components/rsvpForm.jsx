@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class RsvpForm extends Component {
  constructor(props) {
     super(props);
 
     this.state = {
-      selectedOption: "1",
+      selectedOption: "1"
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -13,7 +14,6 @@ class RsvpForm extends Component {
     this.handleOptionChange = this.handleOptionChange.bind(this);
 
   }
-
 
   handleChange(event) {
     event.preventDefault();
@@ -27,11 +27,28 @@ class RsvpForm extends Component {
   handleSubmit(event){
     event.preventDefault();
 
+    console.log("handleSubmit")
+    console.log("THIS STATE", this.state)
+    axios.post("/api/rsvp", {
+      name: this.state.name,
+      email: this.state.email,
+      plusone: this.state.plusName,
+      rsvp: this.state.selectedOption,
+      comments: this.state.comments,
+      songs: this.state.songs
+    })
+      .then((res) => {
+        console.log("RECIEVED DATA FROM SERVER")
+      })
+    this.props.handleClick()
   }
 
+
   render() {
+    console.log(this.state)
 
     return (
+
       <div>
           <label className="left">
             Can you make it?
@@ -59,12 +76,12 @@ class RsvpForm extends Component {
                 <label className="rsvpColumn">
                   First & Last Name:
                 </label>
-                <input className="rsvpColumn input" type="text" name="name" onChange={this.handleChange}></input><br/><br/>
+                <input className="rsvpColumn input" type="text" name="name" onChange={this.handleChange} required ></input><br/><br/>
 
                 <label className="rsvpColumn">
                   Email:
                 </label>
-                <input className="rsvpColumn input" type="text" name="email" onChange={this.handleChange}></input><br/><br/>
+                <input className="rsvpColumn input" type="text" name="email" onChange={this.handleChange} required ></input><br/><br/>
 
                 <label className="rsvpColumn">
                   Plus 1's Name(s):
@@ -80,8 +97,26 @@ class RsvpForm extends Component {
                  Comments:
                 </label>
                 <input className="rsvpColumn comment" type="text" name="comments" onChange={this.handleChange}></input><br/><br/>
-              </form> )
-            : "Sorry to hear that you can't make it to our special day!" }
+                <button className="rsvpButton" onClick={this.handleClick}> Submit your RSVP! </button>
+              </form>
+              ) : (
+              <div>
+                Sorry to hear that you can't make it to our special day! <br/><br/>
+
+                <form className="rsvpForm" onSubmit={this.handleSubmit}>
+                <label className="rsvpColumn">
+                  First & Last Name:
+                </label>
+                <input className="rsvpColumn input" type="text" name="name" onChange={this.handleChange} required ></input><br/><br/>
+
+                <label className="rsvpColumn">
+                  Email:
+                </label>
+                <input className="rsvpColumn input" type="text" name="email" onChange={this.handleChange} required ></input><br/><br/>
+
+                <button className="rsvpButton" onClick={this.handleClick}> Submit your RSVP! </button>
+                </form>
+              </div>)}
           </div>
       )}
 }
