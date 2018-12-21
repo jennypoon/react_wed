@@ -16,7 +16,7 @@ class Admin extends Component {
   }
 
   getList() {
-    axios.get("/api/admin")
+    axios.get("/api/rsvp")
       .then((res) => {
         console.log("RECIEVED DATA FROM SERVER")
         this.setState({ list: res.data})
