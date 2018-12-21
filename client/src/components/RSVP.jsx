@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import "../styling/rsvp.css"
-import RsvpForm from "../components/rsvpForm.jsx"
+import "../styling/rsvp.css";
+import RsvpForm from "../components/rsvpForm.jsx";
 
 class RSVP extends Component {
  constructor(props) {
@@ -15,6 +15,14 @@ class RSVP extends Component {
 
   handleClick(event) {
     this.setState({ rsvp: true });
+    // event.preventDefault();
+    // console.log("handleSubmit")
+    // axios.post("/api/rsvp", {
+    //   first_name: "testing"
+    // })
+    //   .then((res) => {
+    //     console.log("RECIEVED DATA FROM SERVER")
+    //   })
   }
 
 
@@ -23,7 +31,6 @@ class RSVP extends Component {
 
     return (
       <div className="rsvpComponent">
-      <h3> Please RSVP by May 1, 2019</h3>
         {this.state.rsvp ? (
           <div>
             <h3>Your RSVP has been sent! Thank You!</h3>
@@ -32,8 +39,8 @@ class RSVP extends Component {
           </div>
           ) : (
           <div>
-            <RsvpForm/>
-            <button className="rsvpButton" onClick={this.handleClick}> Submit your RSVP! </button>
+            <h3> Please RSVP by May 1, 2019</h3>
+            <RsvpForm handleClick= {this.handleClick} />
           </div>
         )}
       </div>
