@@ -1,8 +1,7 @@
 require('dotenv').config();
 
-const env = process.env.ENV || 'development';
+const env = process.env.NODE_ENV || 'development';
 
-var pg = require('pg');
 const express = require('express');
 const path = require('path');
 const logger = require('morgan');
@@ -14,6 +13,10 @@ const app = express();
 const knexConfig = require('./knexfile');
 const knex = require('knex')(knexConfig[env]);
 
+console.log("KNEXCONFIG", knexConfig)
+console.log("ENV", env)
+console.log("KNEX", knex)
+
 
 //-----------------//
 
@@ -24,18 +27,19 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-console.log("DATABASE URL", process.env.DATABASE_URL);
-
 
 //QUERY FOR RSVP
 app.get('/api/admin', (req,res) => {
+  console.log("API CALL")
   knex('registration')
     .select('*')
     .asCallback((err, data) => {
+      console.log("QUERY DONE")
       if (err) throw err;
       res.json(data);
     });
 });
+
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
