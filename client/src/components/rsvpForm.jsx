@@ -26,8 +26,7 @@ class RsvpForm extends Component {
 
   handleSubmit(event){
     event.preventDefault();
-
-    console.log("handleSubmit")
+    console.log("inside handleSubmit")
     console.log("THIS STATE", this.state)
     axios.post("/api/rsvp", {
       name: this.state.name,
