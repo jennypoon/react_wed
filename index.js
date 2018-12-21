@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const env = process.env.ENV || 'development';
 
-
+var pg = require('pg');
 const express = require('express');
 const path = require('path');
 const logger = require('morgan');
