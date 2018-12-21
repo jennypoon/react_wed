@@ -43,7 +43,6 @@ module.exports = {
   production: {
     client: 'postgresql',
     connection: {
-      port     : process.env.DB_PORT,
       DATABASE_URL: process.env.DATABASE_URL + '?ssl=true'
     },
     pool: {

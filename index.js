@@ -24,6 +24,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
+console.log("DATABASE URL", process.env.DATABASE_URL);
+
+
 //QUERY FOR RSVP
 app.get('/api/admin', (req,res) => {
   knex('registration')
