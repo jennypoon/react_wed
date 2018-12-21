@@ -9,10 +9,10 @@ class RsvpForm extends Component {
       selectedOption: "1",
       name: "",
       email: "",
-      plusone: "",
-      rsvp: "",
-      comments: "",
-      songs: ""
+      plusone: "null",
+      rsvp: null,
+      comments: "null",
+      songs: "null"
     };
 
     this.handleChange = this.handleChange.bind(this);
