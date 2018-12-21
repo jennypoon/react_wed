@@ -50,7 +50,7 @@ module.exports = {
       max: 10
     },
     migrations: {
-      tableName: 'knex_migrations',
+      tableName: 'knex_migrations'
     },
   }
 };
