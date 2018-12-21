@@ -29,8 +29,8 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 
 //QUERY FOR RSVP
-app.get('/api/admin', (req,res) => {
-  console.log("API CALL")
+app.get('/api/rsvp', (req,res) => {
+  console.log("GET API CALL")
   knex('registration')
     .select('*')
     .asCallback((err, data) => {
@@ -40,6 +40,11 @@ app.get('/api/admin', (req,res) => {
     });
 });
 
+
+app.post('/api/rsvp', (req,res) => {
+  console.log("POST API CALL")
+  console.log("req.body", req.body)
+});
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
