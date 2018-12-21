@@ -6,7 +6,13 @@ class RsvpForm extends Component {
     super(props);
 
     this.state = {
-      selectedOption: "1"
+      selectedOption: "1",
+      name: "",
+      email: "",
+      plusone: "",
+      rsvp: "",
+      comments: "",
+      songs: ""
     };
 
     this.handleChange = this.handleChange.bind(this);
