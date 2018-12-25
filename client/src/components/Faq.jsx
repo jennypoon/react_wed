@@ -6,77 +6,83 @@ import parkingLocation from '../images/parking.png'
 function Faq() {
   return (
     <div>
-    <div className="questionComponent">
-      <p className="question">
-        Can we bring our kids?
-      </p>
-      <p className="answer">
-        We love kids and love playing with them but unfortunately, we do not have room! Take this as an opportunity to let your hair down and have fun! We love you and want you to be here, and if the only reason why you can’t come is because you can’t find a sitter, let us know and we’ll think of something.
-      </p>
-    </div>
+      <div className="questionComponent">
+        <p className="question">
+          Can we bring our kids?
+        </p>
+        <p className="answer">
+          We love kids and love playing with them but unfortunately, we do not have room! Take this as an opportunity to let your hair down and have fun! We love you and want you to be here, and if the only reason why you can’t come is because you can’t find a sitter, let us know and we’ll think of something.
+        </p>
+      </div>
 
-    <div className="questionComponent">
-      <p className="question">
-        What should I wear? Are there colour I need to avoid?
-      </p>
-      <p className="answer">
-      Semi-formal attire. Bridesmaid will be wearing light pink and groomsmen will be wearing grey. Please no jeans or casual T-shirt’s. I mean, you could, but just a warning, the photographer will either avoid you all night or they’ll call you out and put you on the worst dress list (not my words, theirs!). We will be dancing the night away so please wear comfortable shoes. TB to the 90’s baby! If you got songs, let us know!
-      </p>
-    </div>
+      <div className="questionComponent">
+        <p className="question">
+          What should I wear? Are there colour I need to avoid?
+        </p>
+        <p className="answer">
+        Semi-formal attire. Bridesmaid will be wearing light pink and groomsmen will be wearing grey. Please no jeans or casual T-shirt’s. I mean, you could, but just a warning, the photographer will either avoid you all night or they’ll call you out and put you on the worst dress list (not my words, theirs!). We will be dancing the night away so please wear comfortable shoes. TB to the 90’s baby! If you got songs, let us know!
+        </p>
+      </div>
 
-    <div className="questionComponent">
-      <p className="question">
-      Where is the event?
-      </p>
-      <p className="answer">
-      The reception is held at south bonson community center and the ceremony will be held on the wharf nearby. There will be signs to direct you from the parking lot.
-      </p> <br/>
+      <div className="questionComponent">
+        <p className="question">
+        Where is the event?
+        </p>
+        <p className="answer">
+        The reception is held at south bonson community center and the ceremony will be held on the wharf nearby. There will be signs to direct you from the parking lot.
+        </p> <br/>
+        <img src={ceremonyLocation} width="100%" height="100%" alt="ceremony location" />
+      </div>
 
-      <img src={ceremonyLocation} width="100%" height="100%" alt="ceremony location" />
+      <div className="questionComponent">
+        <p className="question">
+          Is there parking?
+        </p>
+        <p className="answer">
+          Yes! Parking is free. Please print this parking pass and place it on your dashboard when you come.
+          You can park here:
+        </p>
+        <br/>
+        <img src={parkingLocation} width="100%" height="100%" alt="parking location" />
+        <p>
+          We highly recommend that you carpool. Not because it’s environmentally good to do so and will reduce your carbon footprint, parking is rather limited, unless you don’t mind walking a bit.
+        </p>
+      </div>
 
-    </div>
+      <div className="questionComponent">
+        <p className="question">
+          The venue is in Pitt Meadows?! Omg so far... why?
+        </p>
+        <p className="answer">
+        Why not?! Get away from the crazy traffic and enjoy the calmness of the nearby River. You’ll be surprised to know there is life outside of Vancouver and Burnaby! I promise you, the suburbs are very civilized.
+        </p>
+      </div>
 
-    <div className="questionComponent">
-      <p className="question">
-        Is there parking?
-      </p>
-      <p className="answer">
-        Yes! Please print this parking pass and place it on your dashboard when you come.
+      <div className="questionComponent">
+        <p className="question">
+          What time should we arrive?
+        </p>
+        <p className="answer">
+          The ceremony starts at 4pm sharp. Please arrive by 3:45pm at the latest so you’re seated before it starts.
+        </p>
+      </div>
 
-        You can park here:
-      </p>
-      <br/>
-      <img src={parkingLocation} width="100%" height="100%" alt="parking location" />
-      <p>
-        We highly recommend that you carpool. Not because it’s environmentally good to do so and will reduce your carbon footprint, parking is rather limited, unless you don’t mind walking a bit.
-      </p>
-    </div>
+      <div className="questionComponent">
+        <p className="question">
+          Do you have a registry?
+        </p>
+        <p className="answer">
+          Nope, and we don’t plan to get one! We don’t need anything, we’re just glad that you’re coming to celebrate this big moment with us :)
+        </p>
+      </div>
 
-    <div className="questionComponent">
-      <p className="question">
-        The venue is in Pitt Meadows?! Omg so far... why?
-      </p>
-      <p className="answer">
-      Why not?! Get away from the crazy traffic and enjoy the calmness of the nearby River. You’ll be surprised to know there is life outside of Vancouver and Burnaby! I promise you, the suburbs are very civilized.
-      </p>
-    </div>
-
-    <div className="questionComponent">
-      <p className="question">
-        What time should we arrive?
-      </p>
-      <p className="answer">
-        The ceremony starts at 4pm sharp. Please arrive by 3:45pm at the latest so you’re seated before it starts.
-      </p>
-    </div>
-
-    <div className="questionComponent">
-      <p className="question">
-        Do you have a registry?
-      </p>
-      <p className="answer">
-        Nope, and we don’t plan to get one! We don’t need anything, we’re just glad that you’re coming to celebrate this big moment with us :)
-      </p>
+      <div className="questionComponent">
+        <p className="question">
+          What food will be served?
+        </p>
+        <p className="answer">
+          Westetrn buffet style! We are aware of most of our guests dietary restrictions and due our best to accommodate.
+        </p>
       </div>
   </div>
     )
