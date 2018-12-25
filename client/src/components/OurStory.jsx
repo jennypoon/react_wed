@@ -13,12 +13,12 @@ function OurStory() {
         >
           <h4 className="vertical-timeline-element-subtitle">First Encounter </h4>
           <p>
-            Leora (Bridesmaid) and Wilson (Groomsman), who are highschool friends, invited Jenny and Stephen to join their friends run the Vancouver Sun Run. After the race, they decided to go out for Pho but, being the keener that she is, Jenny wanted to go back to the library to study for her finals...and life went on.
+            Leora (Bridesmaid) and Wilson (Groomsman), who are highschool friends, invited Jenny and Stephen to join their friends to run the Vancouver Sun Run. After the race, they decided to go out for Pho but, being the keener that she is, Jenny wanted to go back to the library to study for her finals...and life went on.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="April 27, 2012 --- commentary --- Jenny: Just so we're all clear - I wasn't stalking him... I was just curious! Stephen: I don't even use Facebook, so she's lucky I decided to sign into my account that night"
+          date="April 27, 2012 --- commentary --- Jenny: Just so we're all clear - I wasn't stalking him... I was just curious! Stephen: I wasn't playing hard to get, I just don't even use Facebook! She's lucky I decided to sign into my account that night"
         >
           <h4 className="vertical-timeline-element-subtitle">First Move</h4>
           <p>
@@ -31,7 +31,7 @@ function OurStory() {
         >
           <h4 className="vertical-timeline-element-subtitle">First Date</h4>
           <p>
-          Because Jenny couldn't join in for Pho after the Sun Run, they decided to grab Pho in Surrey. After lunch, they leisurely walked around Bear Creek park and talked the day away
+          Because Jenny couldn't join them for Pho after the Sun Run, they decided to grab Pho in Surrey. After lunch, they leisurely walked around Bear Creek park and talked the day away.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -40,16 +40,16 @@ function OurStory() {
         >
           <h4 className="vertical-timeline-element-subtitle">We're an Item</h4>
           <p>
-            Stephen finally had the courage to make things officially after "seeing each other" for 2 months. The next day, Jenny got her wisdom teeth pulled out and refused to show her face to him for a week+.
+            Stephen finally had the courage to make things official after 2 months of dating. The next day, Jenny got her wisdom teeth removed and refused to show her face for a week+.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education eventBox"
-          date="September - December 2012 --- commentary --- Jenny: He mail french macarons from Paris to my workplace, what a sweetheart right?!"
+          date="September - December 2012 --- commentary --- Jenny: One time, He mailed french macarons from Paris to my workplace, what a sweetheart right?!"
         >
           <h4 className="vertical-timeline-element-subtitle">Long Distance</h4>
           <p>
-          Stephen moved to Paris for a semester. For four months, Stephen would wake up at 5am in the morning to Skype with Jenny. Every. Single. Day. Doing long distance with such a fresh relationship wasn't easy, but Stephen made it work and was strong for the both of us.
+          Stephen moved to Paris for a semester. For 4 months, Stephen would wake up at 5AM in the morning to Skype with Jenny. Every. Single. Day. Doing long distance wasn't easy, but Stephen made it work and was strong for the both of them.
           </p>
         </VerticalTimelineElement>
 
@@ -59,18 +59,18 @@ function OurStory() {
         >
           <h3 className="vertical-timeline-element-title">First Home</h3>
           <p>
-          Jenny and Stephen has been shopping around for a house in the crazy market but couldn't seem to find one they both liked. Then, their realtor sent them a listing where the previous sale fell through. After some very adult conversations and a stressful evening, an offer was put in. And just like that, they were homeowners!
+          Jenny and Stephen has been shopping around for a house but couldn't seem to find one they both liked. Then, their realtor sent them a listing where the previous sale fell through. After some very adult conversations and a stressful evening, an offer was put in. And just like that, they were homeowners!
           </p>
 
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education eventBox"
-          date="January 28, 2018 --- commentary --- Jenny: He doesn't even know how to play the piano! I was so impressed! I don't even know when he had the time to practice since we see each other like everyday!"
+          date="January 28, 2018 --- commentary --- Jenny: He doesn't even know how to play the piano! I was so impressed! I don't even know when he had the time to practice since we see each other pretty much everyday!"
         >
           <h3 className="vertical-timeline-element-subtitle">The Proposal</h3>
           <p>
-            It was a very normal date night - They went to West Vancouver for some delicious pie and then Jenny took Stephen to her favorite Turkish restaurant. They came home and Stephen decorated the piano with laterns he bought for her 6 years ago. Then he started playing "Stand By Me" on the piano, grabbed the ring and went down on one knee *cue the Awwws*
+            It was a very normal date night - They went to West Vancouver for some delicious pie and then Jenny took Stephen to her favorite Turkish restaurant. They came home and Stephen decorated the piano with lanterns he bought for her 6 years ago. Then he started playing "Stand By Me" on the piano, grabbed the ring and went down on one knee *c u e   t h e   A w w w s*
           </p>
         </VerticalTimelineElement>
 
