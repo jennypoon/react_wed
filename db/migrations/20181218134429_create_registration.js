@@ -6,6 +6,8 @@ exports.up = function(knex, Promise){
     table.text('plus_one');
     table.text('song_requests');
     table.text('comments');
+    table.integer('rsvp').notNull();
+
   })
 }
 
