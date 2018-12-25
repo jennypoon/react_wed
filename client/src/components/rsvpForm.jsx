@@ -32,8 +32,6 @@ class RsvpForm extends Component {
 
   handleSubmit(event){
     event.preventDefault();
-    console.log("inside handleSubmit")
-    console.log("THIS STATE", this.state)
     axios.post("/api/rsvp", {
       name: this.state.name,
       email: this.state.email,
@@ -43,7 +41,7 @@ class RsvpForm extends Component {
       songs: this.state.songs
     })
       .then((res) => {
-        console.log("RECIEVED DATA FROM SERVER")
+        console.log("Successful Insert")
       })
     this.props.handleClick()
   }
