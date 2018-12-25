@@ -21,8 +21,18 @@ h1 {
   /*overflow: scroll;*/
 }
 
+.floralPinkPeach {
+
+  position: absolute;
+  margin-left: 70%;
+  margin-top: -10%;
+  width: 40%;
+  height: 40%;
+  opacity: 0.8;
+}
+
 .jsLogo {
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   width: 180px;
   height: 200;
@@ -31,14 +41,13 @@ h1 {
 
 @media screen and (max-width: 800px) {
 
-.jsLogo {
-  z-index: 1;
-  position: relative;
-  width: 180px;
-  height: 200;
-  padding: 25px;
-}
-
+  .jsLogo {
+    z-index: 1;
+    position: relative;
+    width: 180px;
+    height: 200;
+    padding: 25px;
+  }
 }
 /*.App-logo {
   animation: App-logo-spin infinite 20s linear;
