@@ -21,6 +21,25 @@ h1 {
   /*overflow: scroll;*/
 }
 
+.jsLogo {
+  z-index: 1;
+  position: fixed;
+  width: 180px;
+  height: 200;
+  padding: 25px;
+}
+
+@media screen and (max-width: 800px) {
+
+.jsLogo {
+  z-index: 1;
+  position: relative;
+  width: 180px;
+  height: 200;
+  padding: 25px;
+}
+
+}
 /*.App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;

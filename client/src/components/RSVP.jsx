@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "../styling/rsvp.css";
 import RsvpForm from "../components/rsvpForm.jsx";
+import cornerFloral from "../images/floral_frame.png"
 
 class RSVP extends Component {
  constructor(props) {
