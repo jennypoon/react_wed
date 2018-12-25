@@ -63,14 +63,13 @@ function OurStory() {
           </p>
 
         </VerticalTimelineElement>
-
         <VerticalTimelineElement
           className="vertical-timeline-element--education eventBox"
           date="January 28, 2018 --- commentary --- Jenny: He doesn't even know how to play the piano! I was so impressed! I don't even know when he had the time to practice since we see each other pretty much everyday!"
         >
           <h3 className="vertical-timeline-element-subtitle">The Proposal</h3>
           <p>
-            It was a very normal date night - They went to West Vancouver for some delicious pie and then Jenny took Stephen to her favorite Turkish restaurant. They came home and Stephen decorated the piano with lanterns he bought for her 6 years ago. Then he started playing "Stand By Me" on the piano, grabbed the ring and went down on one knee *c u e   t h e   A w w w s*
+            It was a very normal date night - They went to West Vancouver for some delicious pie and then Jenny took Stephen to her favorite Turkish restaurant. They came home and Stephen decorated the piano with lanterns he bought for her 6 years ago. Then he started playing "Stand By Me" on the piano, grabbed the ring and went down on one knee (cue the Awwwss!)
           </p>
         </VerticalTimelineElement>
 

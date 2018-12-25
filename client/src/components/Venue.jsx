@@ -26,9 +26,9 @@ class Venue extends Component {
       <h2>South Bonson Community Center </h2>
       <p> 10932 Barnston View Rd<br/> Pitt Meadows, BC V3Y 0B9</p>
 
-      <div class="mapouter" style={mapouterStyle} >
-        <div class="gmap_canvas" style={gmapStyle} >
-          <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=south%20bonson%20community%20center&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+      <div className="mapouter" style={mapouterStyle} >
+        <div className="gmap_canvas" style={gmapStyle} >
+          <iframe title="map" width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=south%20bonson%20community%20center&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0">
           </iframe>
         </div>
       </div>
