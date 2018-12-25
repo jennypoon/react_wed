@@ -8,6 +8,8 @@ import RSVP from "./components/RSVP.jsx";
 import Faq from "./components/Faq.jsx";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import logo from "./images/vista_logo.png";
+import floralPinkPeach from './images/floral_piece_pink_peach.png'
+
 
 
 import "react-tabs/style/react-tabs.css";
@@ -56,6 +58,7 @@ class Home extends Component {
     return (
       <div>
         <img src={logo} className="jsLogo" alt="logo" />
+        <img className="floralPinkPeach" src={floralPinkPeach} alt="floral" />
         <Countdown date="2019-08-24T00:00:00" />
         <SideImages />
         { tabs }
