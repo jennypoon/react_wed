@@ -23,7 +23,6 @@ class Admin extends Component {
   }
 
   displayList(list) {
-    console.log("inside displayList function", list)
     return (list.map((guest) => {
       return(
         <tr key={ guest.id }>
@@ -49,6 +48,7 @@ class Admin extends Component {
     return (
       <div className="admin">
         <h1>RSVP List</h1>
+        <p> Total Guest Count: { list.length } </p>
         <table>
           <tbody>
            <tr>
