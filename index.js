@@ -30,7 +30,6 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 //QUERY FOR RSVP
 app.get('/api/rsvp', (req,res) => {
-  console.log("GET API CALL")
   knex('registration')
     .select('*')
     .asCallback((err, data) => {
@@ -42,8 +41,6 @@ app.get('/api/rsvp', (req,res) => {
 
 
 app.post('/api/rsvp', (req,res) => {
-  console.log("POST API CALL")
-  console.log("req.body", req.body)
   knex('registration')
     .insert({
       name: req.body.name,
@@ -54,8 +51,7 @@ app.post('/api/rsvp', (req,res) => {
       song_requests: req.body.songs
     })
     .then((data) => {
-      console.log(".THEN")
-      res.json("Successfully inserted")
+      res.json("Server: successfully inserted")
     })
 });
 
