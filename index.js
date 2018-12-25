@@ -13,9 +13,9 @@ const app = express();
 const knexConfig = require('./knexfile');
 const knex = require('knex')(knexConfig[env]);
 
-console.log("KNEXCONFIG", knexConfig)
-console.log("ENV", env)
-console.log("KNEX", knex)
+// console.log("KNEXCONFIG", knexConfig)
+// console.log("ENV", env)
+// console.log("KNEX", knex)
 
 
 //-----------------//
@@ -48,15 +48,17 @@ app.post('/api/rsvp', (req,res) => {
     .insert({
       name: req.body.name,
       email: req.body.email,
-      plusone: req.body.plusName,
-      rsvp: req.body.selectedOption,
-      comments: req.body..comments,
-      songs: req.body.songs
+      plus_one: req.body.plusone,
+      rsvp: req.body.rsvp,
+      comments: req.body.comments,
+      song_requests: req.body.songs
     })
     .then((data) => {
+      console.log(".THEN")
       res.json("Successfully inserted")
     })
 });
+
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
