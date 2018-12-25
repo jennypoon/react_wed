@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import "../styling/venue.css";
+import ceremonyLocation from '../images/ceremony_location.png'
+import parkingLocation from '../images/parking.png'
 
 class Venue extends Component {
 
-  //   <div className="venueLeft">
-    //     <p> Details about Venue </p>
-    //   </div>
-    //   <div className="venueRight">
  render() {
 
   const mapouterStyle = {
@@ -25,12 +23,27 @@ class Venue extends Component {
 
   return (
     <div className="venueComponent">
+      <h2>South Bonson Community Center </h2>
+      <p> 10932 Barnston View Rd<br/> Pitt Meadows, BC V3Y 0B9</p>
+
       <div class="mapouter" style={mapouterStyle} >
         <div class="gmap_canvas" style={gmapStyle} >
           <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=south%20bonson%20community%20center&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
           </iframe>
         </div>
       </div>
+      <div className="venueDetails">
+        <h3> CEREMONY </h3>
+        <p> The ceremony will be held at the whalf located about 500ft from the venue </p>
+        <p> There will be signs to help guide you </p>
+        <img src={ceremonyLocation} width="100%" height="100%" alt="ceremony location" />
+        <h3> PARKING </h3>
+        <p> Please print this parking pass and place it on your dashboard </p>
+        <p> Parking areas are highlighed in red below </p>
+        <p> There are both street parking and a parking lot available. Carpooling is highlighly recommended as parking is rather limited </p>
+        <img src={parkingLocation} width="100%" height="100%" alt="parking location" />
+      </div>
+
     </div>
   )}
 }
