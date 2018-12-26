@@ -9,7 +9,7 @@ import Faq from "./components/Faq.jsx";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import logo from "./images/vista_logo.png";
 import floralPinkPeach from './images/floral_piece_pink_peach.png'
-
+import LoadingPage from "./LoadingPage.jsx"
 
 
 import "react-tabs/style/react-tabs.css";
@@ -17,6 +17,19 @@ import "./styling/tabs.css"
 import './App.css';
 
 class Home extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state= {
+     isLoading: true
+    }
+  }
+
+  componentDidMount() {
+    this.setState({ isLoading: true });
+   }
+
   render() {
 
     const tabs = (
@@ -57,11 +70,17 @@ class Home extends Component {
 
     return (
       <div>
-        <img src={logo} className="jsLogo" alt="logo" />
-        <img className="floralPinkPeach" src={floralPinkPeach} alt="floral" />
-        <Countdown date="2019-08-24T00:00:00" />
-        <SideImages />
-        { tabs }
+        { this.state.isLoading ? (
+          <LoadingPage />
+          ) : (
+          <div>
+            <img src={logo} className="jsLogo" alt="logo" />
+            <img className="floralPinkPeach" src={floralPinkPeach} alt="floral" />
+            <Countdown date="2019-08-24T00:00:00" />
+            <SideImages />
+            { tabs }
+          </div>
+        )}
       </div>
     );
   }
