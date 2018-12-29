@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
 import SideImages from "./components/SideImages.jsx";
 import Countdown from "./components/Countdown.jsx";
 import OurStory from "./components/OurStory.jsx";
@@ -6,11 +8,11 @@ import Venue from "./components/Venue.jsx";
 import Schedule from "./components/Schedule.jsx";
 import RSVP from "./components/RSVP.jsx";
 import Faq from "./components/Faq.jsx";
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import logo from "./images/vista_logo.png";
-import floralPinkPeach from './images/floral_piece_pink_peach.png'
-import LoadingPage from "./LoadingPage.jsx"
+import Team from "./components/Team.jsx";
+import LoadingPage from "./LoadingPage.jsx";
 
+import logo from "./images/vista_logo.png";
+import floralPinkPeach from './images/floral_piece_pink_peach.png';
 
 import "react-tabs/style/react-tabs.css";
 import "./styling/tabs.css"
@@ -59,7 +61,7 @@ class Home extends Component {
             <RSVP />
           </TabPanel>
           <TabPanel>
-            <RSVP />
+            <Team />
           </TabPanel>
           <TabPanel>
             <Faq />
