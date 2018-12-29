@@ -54,7 +54,7 @@ function Faq() {
           The venue is in Pitt Meadows?! Omg so far... why?
         </p>
         <p className="answer">
-        Why not?! Get away from the crazy traffic and enjoy the calmness of the nearby River. You’ll be surprised to know there is life outside of Vancouver and Burnaby! I promise you, the suburbs are very civilized.
+        Why not?! Get away from the crazy traffic and enjoy the calmness of the Fraser River. You’ll be surprised to know there is life outside of Vancouver and Burnaby! I promise you, the suburbs are very civilized.
         </p>
       </div>
 
@@ -81,7 +81,7 @@ function Faq() {
           What food will be served?
         </p>
         <p className="answer">
-          Westetrn buffet style! We are aware of most of our guests dietary restrictions and due our best to accommodate.
+          Western buffet style! We are aware of most of our guests dietary restrictions and we will do our best to accommodate.
         </p>
       </div>
   </div>
