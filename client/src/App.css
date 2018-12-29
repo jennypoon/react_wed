@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Amaranth:400,400i,700|Dosis:500,600,700|Signika+Negative:400,600');
 <
 
-body {
-  overflow-x: hidden;
-}
-
 .App {
-  overflow-x: hidden;
   text-align: center;
 }
 
@@ -18,7 +13,6 @@ h1 {
 
 .floralPinkPeach {
   position: absolute;
-  overflow-x: hidden;
   margin-left: 73%;
   margin-top: -10%;
   width: 40%;
