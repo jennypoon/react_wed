@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Amaranth:400,400i,700|Dosis:500,600,700|Signika+Negative:400,600');
 <
 
-html, body, #root {
+body {
   overflow-x: hidden;
 }
 
