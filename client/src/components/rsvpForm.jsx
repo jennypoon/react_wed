@@ -35,7 +35,7 @@ class RsvpForm extends Component {
     axios.post("/api/rsvp", {
       name: this.state.name,
       email: this.state.email,
-      plusone: this.state.plusName,
+      plusone: this.state.plusone,
       rsvp: this.state.selectedOption,
       comments: this.state.comments,
       songs: this.state.songs
