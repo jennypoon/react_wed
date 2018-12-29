@@ -8,8 +8,6 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const app = express();
 
-
-
 //MAILGUN API
 var api_key = process.env.MAILGUN_API;
 var DOMAIN = process.env.MAILGUN_DOMAIN;
@@ -19,17 +17,13 @@ var mailgun = require('mailgun-js')({ apiKey: api_key, domain: DOMAIN });
 const knexConfig = require('./knexfile');
 const knex = require('knex')(knexConfig[env]);
 
-// console.log("KNEXCONFIG", knexConfig)
-// console.log("ENV", env)
-// console.log("KNEX", knex)
-
-
 //-----------------//
 
 app.use(logger('dev'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
@@ -59,8 +53,8 @@ app.post('/api/rsvp', (req,res) => {
     .then((data) => {
 
       var email = {
-        from: 'Operation Penguin <postmaster@sandboxf438a24c83de468897e03f26d640861d.mailgun.org>',
-        to: 'jenny.poon@live.ca',
+        from: `Operation Penguin <postmaster@${process.env.MAILGUN_DOMAIN}>`,
+        to: `${process.env.EMAIL}`
         subject: 'WEDDING - Someone has RSVP!',
         text: `${req.body.name} has RSVP to your wedding! Here are the details:
           RSVP: ${req.body.rsvp},
@@ -73,11 +67,6 @@ app.post('/api/rsvp', (req,res) => {
       mailgun.messages().send(email, function (error, body) {
         console.log("MESSAGE SENT");
       })
-
-
-
-
-
       res.json("Server: successfully inserted")
     })
 });
