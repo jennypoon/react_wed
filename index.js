@@ -57,6 +57,27 @@ app.post('/api/rsvp', (req,res) => {
       song_requests: req.body.songs
     })
     .then((data) => {
+
+      var email = {
+        from: 'Operation Penguin <postmaster@sandboxf438a24c83de468897e03f26d640861d.mailgun.org>',
+        to: 'jenny.poon@live.ca',
+        subject: 'WEDDING - Someone has RSVP!',
+        text: `${req.body.name} has RSVP to your wedding! Here are the details:
+          RSVP: ${req.body.rsvp},
+          Plus_one: ${req.body.plusone},
+          Comments: ${req.body.comments}
+
+          Visit: http://jennystephen.herokuapp.com/rsvp/admin`
+      };
+
+      mailgun.messages().send(email, function (error, body) {
+        console.log("MESSAGE SENT");
+      })
+
+
+
+
+
       res.json("Server: successfully inserted")
     })
 });
