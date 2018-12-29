@@ -15,14 +15,6 @@ class RSVP extends Component {
 
   handleClick(event) {
     this.setState({ rsvp: true });
-    // event.preventDefault();
-    // console.log("handleSubmit")
-    // axios.post("/api/rsvp", {
-    //   first_name: "testing"
-    // })
-    //   .then((res) => {
-    //     console.log("RECIEVED DATA FROM SERVER")
-    //   })
   }
 
 
