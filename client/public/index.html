@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="%PUBLIC_URL%/../styling.loadingpage.css">
     <link rel="shortcut icon" href="%PUBLIC_URL%/vista_logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -11,46 +10,6 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <style>
-    body {
-      overflow-x: hidden;
-    }
-
-    .logoLoading {
-      z-index: 1;
-      display:  block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 45%;
-      height: 45%;
-      overflow: hidden;
-    }
-
-    .titleLoadingPage {
-      text-align: center;
-      font-family: 'Julius Sans One', sans-serif;
-      letter-spacing: 0.05em;
-    }
-
-    .loadingText {
-      text-align: center;
-      font-family: 'Julius Sans One', sans-serif;
-      overflow: hidden; /* Ensures the content is not revealed until the animation */
-      border-right: .15em solid white; /* The typwriter cursor */
-      white-space: nowrap; /* Keeps the content on a single line */
-      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-      letter-spacing: .15em; /* Adjust as needed */
-      animation:
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite;
-    }
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 30% }
-}
-    </style>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -68,11 +27,6 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root">
-      <div class="loadingPage">
-        <h2 class="titleLoadingPage"> Jenny & Stephen Wedding </h2>
-        <h3 class="loadingText"> l   o   a   d   i   n   g . . . </h3>
-        <img class="logoLoading" src="%PUBLIC_URL%/loadingPage.png" alt="JS logo" />
-      </div>
     </div>
   </body>
 </html>
