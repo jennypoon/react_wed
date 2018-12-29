@@ -9,6 +9,12 @@ const bodyParser = require('body-parser');
 const app = express();
 
 
+
+//MAILGUN API
+var api_key = process.env.MAILGUN_API;
+var DOMAIN = process.env.MAILGUN_DOMAIN;
+var mailgun = require('mailgun-js')({ apiKey: api_key, domain: DOMAIN });
+
 //DATABASE
 const knexConfig = require('./knexfile');
 const knex = require('knex')(knexConfig[env]);
