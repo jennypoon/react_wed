@@ -18,6 +18,7 @@ h1 {
 
 .floralPinkPeach {
   position: absolute;
+  overflow-x: hidden;
   margin-left: 73%;
   margin-top: -10%;
   width: 40%;
