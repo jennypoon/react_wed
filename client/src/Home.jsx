@@ -27,7 +27,7 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    this.setState({ isLoading: false });
+    setTimeout(() => this.setState({ isLoading: false }), 3000);
    }
 
   render() {
