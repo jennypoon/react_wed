@@ -89,7 +89,7 @@ class RsvpForm extends Component {
                 <label className="rsvpColumn">
                   Plus 1's Name(s):
                 </label>
-                <input className="rsvpColumn input" type="text" name="plusName" onChange={this.handleChange}></input><br/><br/>
+                <input className="rsvpColumn input" type="text" name="plusone" onChange={this.handleChange}></input><br/><br/>
 
                 <label className="rsvpColumn">
                  Song Requests:
