@@ -52,21 +52,21 @@ app.post('/api/rsvp', (req,res) => {
     })
     .then((data) => {
 
-      // var email = {
-      //   from: `Operation Penguin <postmaster@${process.env.MAILGUN_DOMAIN}>`,
-      //   to: `${process.env.EMAIL}`,
-      //   subject: 'WEDDING - Someone has RSVP!',
-      //   text: `${req.body.name} has RSVP to your wedding! Here are the details:
-      //     RSVP: ${req.body.rsvp},
-      //     Plus_one: ${req.body.plusone},
-      //     Comments: ${req.body.comments}
+      var emailBody = {
+        from: `Operation Penguin <postmaster@${process.env.MAILGUN_DOMAIN}>`,
+        to: `${process.env.EMAIL}`,
+        subject: 'WEDDING - Someone has RSVP!',
+        text: `${req.body.name} has RSVP to your wedding! Here are the details:
+          RSVP: ${req.body.rsvp},
+          Plus_one: ${req.body.plusone},
+          Comments: ${req.body.comments}
 
-      //     Visit: http://jennystephen.herokuapp.com/rsvp/admin`
-      // };
+          Visit: http://jennystephen.herokuapp.com/rsvp/admin`
+      };
 
-      // mailgun.messages().send(email, function (error, body) {
-      //   console.log("MESSAGE SENT");
-      // })
+      mailgun.messages().send(emailBody, function (error, body) {
+        console.log("MESSAGE SENT");
+      })
       res.json("Server: successfully inserted")
     })
 });
