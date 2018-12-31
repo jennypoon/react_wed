@@ -32,9 +32,28 @@ h1 {
 
   .jsLogo {
     z-index: 1;
+    margin-bottom: 90px;
     position: relative;
     width: 180px;
-    height: 200;
-    padding: 25px;
+    height: 200px;
+    padding: 30px;
+  }
+
+  .floralPinkPeach {
+    display: none
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .jsLogo {
+    z-index: 1;
+    position: relative;
+    width: 100px;
+    height: 150px;
+    padding: 30px;
+  }
+
+  .floralPinkPeach {
+    display: none
   }
 }
