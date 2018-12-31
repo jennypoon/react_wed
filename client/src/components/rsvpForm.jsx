@@ -10,7 +10,6 @@ class RsvpForm extends Component {
       name: "",
       email: "",
       plusone: "null",
-      rsvp: null,
       comments: "null",
       songs: "null"
     };
