@@ -55,11 +55,14 @@ app.post('/api/rsvp', (req,res) => {
       var emailBody = {
         from: `Operation Penguin <postmaster@${process.env.MAILGUN_DOMAIN}>`,
         to: `${process.env.EMAIL}`,
-        subject: 'WEDDING - Someone has RSVP!',
-        text: `${req.body.name} has RSVP to your wedding! Here are the details:
-          RSVP: ${req.body.rsvp},
-          Plus_one: ${req.body.plusone},
-          Comments: ${req.body.comments}
+        subject: `WEDDING - ${req.body.name} has RSVP to your wedding`,
+        text:
+        `${req.body.name} (${req.body.email}) has RSVP to your wedding!
+          Here are the details:
+
+          RSVP: ${req.body.rsvp === '1'? `Yes, coming!
+          Plus One: ${req.body.plusone}\n
+          Comments:${req.body.comments}` : "Sorry, can't make it" }
 
           Visit: http://jennystephen.herokuapp.com/rsvp/admin`
       };
@@ -67,6 +70,7 @@ app.post('/api/rsvp', (req,res) => {
       mailgun.messages().send(emailBody, function (error, body) {
         console.log("MESSAGE SENT");
       })
+
       res.json("Server: successfully inserted")
     })
 });
