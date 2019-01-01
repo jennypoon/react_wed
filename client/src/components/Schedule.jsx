@@ -1,22 +1,45 @@
 import React, { Component } from 'react';
 import "../styling/schedule.css"
+import ceremonyLocation from '../images/ceremony_location.png'
+
 
 class Schedule extends Component {
  render() {
   return (
     <div class="timeline">
-      <div class="container left">
+
+      <div class="container circle">
         <div class="content">
-        <h2>2017</h2>
-        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+          <h2>4:00PM | Ceremony</h2>
+          <p>
+           Ceremony will start 4:00pm, please arrive no later than 3:45pm so you are properly. The ceremony will be held at the wharf located near the venue, as shown in the map below:<br/><br/>
+          <img class="imageCeremony" src={ceremonyLocation} alt="ceremony location" />
+         </p>
       </div>
     </div>
-    <div class="container right">
+
+    <div class="container circle">
       <div class="content">
-        <h2>2016</h2>
-        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        <h2>4:45PM - 5:45PM | Cocktail Hour</h2>
+        <p>
+        During this time, we will be taking group shots! Please stay closeby so you don't miss your turn! Once you have gotten your pictures taken, please head back to the venue to find out your table number! <br/><br/>
+
+        You will be given a chance to battle for the GOLDEN TICKET, which will allow your table to eat first after the VIPs.
+        </p>
       </div>
     </div>
+
+    <div class="container circle">
+      <div class="content">
+        <h2>6:00PM - Midnight | Reception </h2>
+        <p>
+         Eat, Mingle, Drink and Dance the night away!
+        </p>
+      </div>
+    </div>
+
+
+
   </div>
   )}
 }
