@@ -39,7 +39,7 @@ function Faq() {
           Is there parking?
         </p>
         <p className="answer">
-          Yes! Parking is free. Please print this parking pass and place it on your dashboard when you come.
+          Yes! Parking is free. Please print this <a href="https://docs.google.com/document/d/1FIkEgIjHucjm_Y0VeZA-qo69UYID61Srx4NWYGFuEns/edit?usp=sharing">parking pass</a> and place it on your dashboard when you come.
           You can park here:
         </p>
         <br/>
