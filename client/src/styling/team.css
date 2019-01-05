@@ -17,7 +17,7 @@
 }
 
 .imgContainer {
-  margin: 2px;
+  margin-left: 2px;
   position: relative;
   overflow: hidden;
   max-width: 100%;
@@ -39,7 +39,7 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
-  padding: 15px;
+  padding: 5px;
   transition: all 0.4s ease-in-out 0s;
 }
 .imgContainer .teamHoverText {  /*position: absolute;*/

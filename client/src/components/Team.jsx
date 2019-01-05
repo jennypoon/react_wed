@@ -34,6 +34,8 @@ class Team extends Component {
           <div className="teamHover">
             <div className="teamHoverText">
               <p> Maid Of Honor </p>
+              <p> Abby Sonon - Pinterst Queen </p>
+              <p> Friends since 2013 </p>
             </div>
           </div>
         </div>
