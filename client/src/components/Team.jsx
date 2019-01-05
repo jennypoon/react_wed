@@ -5,33 +5,40 @@ import avatar from '../images/avatar.png'
 class Team extends Component {
  render() {
   return (
-    <div className="teamWrapper">
-      <div className="imgWrapper">
+    <div className="teamContainer">
+
+      <div className="imgContainer">
         <img src={avatar} className="indivImage"/>
+        <div className="teamHover">
+          <div className="teamHoverText">
+            <p> 1 </p>
+          </div>
+        </div>
       </div>
 
-      <div className="imgWrapper">
+      <div className="imgContainer">
         <img src={avatar} className="indivImage"/>
+        <div className="teamHover">
+          <div className="teamHoverText">
+            <p> 2 </p>
+          </div>
+        </div>
       </div>
 
-      <div className="imgWrapper">
+      <div className="imgContainer">
         <img src={avatar} className="indivImage"/>
+        <div className="teamHover">
+          <div className="teamHoverText">
+            <p> 3 </p>
+          </div>
+        </div>
       </div>
 
-      <div className="imgWrapper">
-        <img src={avatar} className="indivImage"/>
-      </div>
-
-      <div className="imgWrapper">
-        <img src={avatar} className="indivImage"/>
-      </div>
-
-      <div className="imgWrapper">
-        <img src={avatar} className="indivImage"/>
-      </div>
     </div>
   )}
 }
 
-export default Team;
 
+
+
+export default Team;
