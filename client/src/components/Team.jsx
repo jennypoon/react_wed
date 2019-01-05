@@ -33,9 +33,9 @@ class Team extends Component {
           <img src={avatar} alt="MOH" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
-              <p> Maid Of Honor </p>
-              <p> Abby Sonon - Pinterst Queen </p>
-              <p> Friends since 2013 </p>
+              <p>A B B Y</p>
+              <p>Maid of Honor</p>
+              <p>All hail the Pinterest Queen!</p>
             </div>
           </div>
         </div>
@@ -44,7 +44,8 @@ class Team extends Component {
           <img src={avatar} alt="Bridesmaid" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
-              <p> Bridesmaid </p>
+              <p>L E O R A</p>
+              <p>What happens in Saskatoon, stays in Saskatoon</p>
             </div>
           </div>
         </div>
@@ -53,7 +54,8 @@ class Team extends Component {
           <img src={avatar} alt="Bridesmaid" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
-              <p> Bridesmaid </p>
+              <p>H O N E Y</p>
+              <p>Best investigator I know</p>
             </div>
           </div>
         </div>
@@ -62,7 +64,8 @@ class Team extends Component {
           <img src={avatar} alt="Bridesmaid" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
-              <p> Bridesmaid </p>
+              <p>G R A C E</p>
+              <p>My Future Yoga Instructor</p>
             </div>
           </div>
         </div>
@@ -76,7 +79,7 @@ class Team extends Component {
           <img src={avatar} alt="Groomsmen" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
-              <p> Groomsmen </p>
+              <p>Groomsmen</p>
             </div>
           </div>
         </div>
