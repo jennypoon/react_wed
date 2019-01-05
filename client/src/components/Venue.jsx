@@ -38,7 +38,7 @@ class Venue extends Component {
         <p> There will be signs to help guide you </p>
         <img src={ceremonyLocation} width="100%" height="100%" alt="ceremony location" />
         <h3> PARKING </h3>
-        <p> Please print this <a href="https://docs.google.com/document/d/1FIkEgIjHucjm_Y0VeZA-qo69UYID61Srx4NWYGFuEns/edit?usp=sharing" target="_blank">parking pass</a> and place it on your dashboard </p>
+        <p> Please print this <a href="https://docs.google.com/document/d/1FIkEgIjHucjm_Y0VeZA-qo69UYID61Srx4NWYGFuEns/edit?usp=sharing" target="_blank" rel="noopener noreferrer">parking pass</a> and place it on your dashboard </p>
         <p> Parking areas are highlighed in red below </p>
         <p> There are both street parking and a parking lot available. Carpooling is highlighly recommended as parking is rather limited </p>
         <img src={parkingLocation} width="100%" height="100%" alt="parking location" />
