@@ -14,7 +14,6 @@
   -moz-column-gap:      0;
   column-count:         2;
   column-gap:           0;
-  border: red solid;
 }
 
 .imgContainer {
