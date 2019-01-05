@@ -7,9 +7,9 @@ class Team extends Component {
   return (
     <div className="teamComponent">
 
-    <h2>Family</h2>
+    <h2>The FamJam</h2>
       <div className="imgContainer">
-        <img src={avatar} className="indivImage"/>
+        <img src={avatar} alt="Stephen's Family" className="indivImage"/>
         <div className="teamHover">
           <div className="teamHoverText">
             <p> Stephen's Family </p>
@@ -18,7 +18,7 @@ class Team extends Component {
       </div>
 
       <div className="imgContainer">
-        <img src={avatar} className="indivImage"/>
+        <img src={avatar} alt="Jenny's Family" className="indivImage"/>
         <div className="teamHover">
           <div className="teamHoverText">
             <p> Jenny's Family </p>
@@ -30,7 +30,7 @@ class Team extends Component {
       <div className="teamContainer">
 
         <div className="imgContainer">
-          <img src={avatar} className="indivImage"/>
+          <img src={avatar} alt="MOH" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
               <p> Maid Of Honor </p>
@@ -39,7 +39,7 @@ class Team extends Component {
         </div>
 
         <div className="imgContainer">
-          <img src={avatar} className="indivImage"/>
+          <img src={avatar} alt="Bridesmaid" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
               <p> Bridesmaid </p>
@@ -48,7 +48,7 @@ class Team extends Component {
         </div>
 
         <div className="imgContainer">
-          <img src={avatar} className="indivImage"/>
+          <img src={avatar} alt="Bridesmaid" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
               <p> Bridesmaid </p>
@@ -57,7 +57,7 @@ class Team extends Component {
         </div>
 
         <div className="imgContainer">
-          <img src={avatar} className="indivImage"/>
+          <img src={avatar} alt="Bridesmaid" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
               <p> Bridesmaid </p>
@@ -71,7 +71,7 @@ class Team extends Component {
       <div className="teamContainer">
 
         <div className="imgContainer">
-          <img src={avatar} className="indivImage"/>
+          <img src={avatar} alt="Groomsmen" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
               <p> Groomsmen </p>
@@ -80,7 +80,7 @@ class Team extends Component {
         </div>
 
         <div className="imgContainer">
-          <img src={avatar} className="indivImage"/>
+          <img src={avatar} alt="Groomsmen" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
               <p> Groomsmen </p>
@@ -89,7 +89,7 @@ class Team extends Component {
         </div>
 
         <div className="imgContainer">
-          <img src={avatar} className="indivImage"/>
+          <img src={avatar} alt="Groomsmen" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
               <p> Groomsmen </p>
@@ -98,7 +98,7 @@ class Team extends Component {
         </div>
 
         <div className="imgContainer">
-          <img src={avatar} className="indivImage"/>
+          <img src={avatar} alt="Groomsmen" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
               <p> Groomsmen </p>
