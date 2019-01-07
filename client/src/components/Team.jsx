@@ -27,8 +27,6 @@ class Team extends Component {
         <div className="teamHover">
           <div className="teamHoverText">
             <h1> Jenny's Family </h1>
-            <p> Sue and Jason Poon - Big Brother and Sister in Law </p>
-            <p> Nancy and Thomas Poon - Mama Poon and Papa Poon</p>
           </div>
         </div>
       </div>
