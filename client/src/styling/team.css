@@ -25,7 +25,16 @@
   border: 1px solid #808080;
 
 }
-.imgContainer img {
+
+.famImage {
+  max-width: 130%;
+  height: 340px;
+  overflow: hidden;
+  display: flex;
+}
+
+
+.indivImage {
   max-width: 130%;
   height: 150px;
   overflow: hidden;

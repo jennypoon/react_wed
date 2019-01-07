@@ -42,7 +42,7 @@ class Home extends Component {
             <Tab> The Venue </Tab>
             <Tab> Schedule </Tab>
             <Tab> RSVP </Tab>
-            <Tab> Team </Tab>
+            <Tab> VIPs </Tab>
             <Tab> FAQs </Tab>
           </TabList>
 

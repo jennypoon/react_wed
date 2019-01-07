@@ -3,6 +3,9 @@ import '../styling/team.css';
 import avatar from '../images/avatar.png'
 import grace from '../images/grace.jpg'
 import honey from '../images/honey.jpg'
+import abby from '../images/abby.jpg'
+import leora from '../images/leora.jpg'
+import Jenfamily from '../images/family.jpg'
 
 class Team extends Component {
  render() {
@@ -11,7 +14,7 @@ class Team extends Component {
 
     <h2>The FamJam</h2>
       <div className="imgContainer">
-        <img src={avatar} alt="Stephen's Family" className="indivImage"/>
+        <img src={avatar} alt="Stephen's Family" className="famImage"/>
         <div className="teamHover">
           <div className="teamHoverText">
             <p> Stephen's Family </p>
@@ -20,10 +23,12 @@ class Team extends Component {
       </div>
 
       <div className="imgContainer">
-        <img src={avatar} alt="Jenny's Family" className="indivImage"/>
+        <img src={Jenfamily} alt="Jenny's Family" className="famImage"/>
         <div className="teamHover">
           <div className="teamHoverText">
-            <p> Jenny's Family </p>
+            <h1> Jenny's Family </h1>
+            <p> Sue and Jason Poon - Big Brother and Sister in Law </p>
+            <p> Nancy and Thomas Poon - Mama Poon and Papa Poon</p>
           </div>
         </div>
       </div>
@@ -32,7 +37,7 @@ class Team extends Component {
       <div className="teamContainer">
 
         <div className="imgContainer">
-          <img src={avatar} alt="MOH" className="indivImage"/>
+          <img src={abby} alt="MOH" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
               <p>A B B Y</p>
@@ -43,7 +48,7 @@ class Team extends Component {
         </div>
 
         <div className="imgContainer">
-          <img src={avatar} alt="Bridesmaid" className="indivImage"/>
+          <img src={leora} alt="Bridesmaid" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
               <p>L E O R A</p>
