@@ -8,23 +8,23 @@
   width: 50%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 988px) {
   .tabStyle {
     overflow-x: hidden;
     display: block;
     width: 100%;
-    margin-top: 0px;
+    margin-top: 300px;
     margin-left: 0%;
     margin-right: 0%;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .tabStyle {
     overflow-x: hidden;
     display: block;
     width: 100%;
-    margin-top: -80px;
+    margin-top: 250px;
     margin-left: 0%;
     margin-right: 0%;
     font-size: 3vw;

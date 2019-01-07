@@ -22,13 +22,16 @@ h1 {
 
 .jsLogo {
   z-index: 2;
-  position: fixed;
-  width: 180px;
-  height: 200;
-  padding: 25px;
+  float: right;
+  position: absolute;
+  width: 100px;
+  height: 120px;
+  opacity: 0.6;
+  padding: 1%;
+  margin-left: 45%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 988px) {
 
   .jsLogo {
     z-index: 1;
@@ -37,6 +40,7 @@ h1 {
     width: 180px;
     height: 200px;
     padding: 30px;
+    margin-left: 0%;
   }
 
   .floralPinkPeach {
@@ -44,12 +48,13 @@ h1 {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .jsLogo {
     z-index: 1;
     position: relative;
-    width: 100px;
-    height: 150px;
+    margin-left: 0%;
+    width: 30%;
+    height: 30%;
     padding: 30px;
   }
 
