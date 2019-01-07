@@ -26,9 +26,11 @@
 
 }
 .imgContainer img {
-  max-width: 100%;
+  max-width: 130%;
+  height: 150px;
+  overflow: hidden;
+  display: flex;
 }
-
 
 .imgContainer .teamHover {
   opacity: 0;
@@ -39,7 +41,6 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
-  padding: 5px;
   transition: all 0.4s ease-in-out 0s;
 }
 .imgContainer .teamHoverText {

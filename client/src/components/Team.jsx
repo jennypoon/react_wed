@@ -53,7 +53,7 @@ class Team extends Component {
         </div>
 
         <div className="imgContainer">
-          <img src={avatar} alt="Bridesmaid" className="indivImage"/>
+          <img src={honey} alt="Bridesmaid" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
               <p>H O N E Y</p>
@@ -63,7 +63,7 @@ class Team extends Component {
         </div>
 
         <div className="imgContainer">
-          <img src={avatar} alt="Bridesmaid" className="indivImage"/>
+          <img src={grace} alt="Bridesmaid" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
               <p>G R A C E</p>
