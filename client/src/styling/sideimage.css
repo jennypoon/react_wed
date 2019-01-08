@@ -9,21 +9,21 @@
 .image1 {
   background: url('../images/cityline2.jpg') no-repeat center ;
   background-size: cover;
-  animation:fade 10s infinite;
+  animation:fade 20s infinite;
   -webkit-animation:fade 20s infinite;
 }
 
 .image2 {
   background: url('../images/testing.jpg') no-repeat;
   background-position: center center;
-  animation:fade2 10s infinite;
+  animation:fade2 20s infinite;
   -webkit-animation:fade2 20s infinite;
 }
 
 .image3 {
   background: url('../images/portrait.jpg') no-repeat center ;
   background-size: contain;
-  animation:fade3 10s infinite;
+  animation:fade3 20s infinite;
   -webkit-animation:fade3 20s infinite;
 }
 
