@@ -1,5 +1,4 @@
 import React from 'react';
-import "../styling/faq.css"
 import ceremonyLocation from '../images/ceremony_location.png'
 import parkingLocation from '../images/parking.png'
 
