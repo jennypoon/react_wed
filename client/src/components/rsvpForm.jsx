@@ -11,12 +11,14 @@ class RsvpForm extends Component {
       email: "",
       plusone: "null",
       comments: "null",
-      songs: "null"
+      songs: "null",
+      invalidEmail: false
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleOptionChange = this.handleOptionChange.bind(this);
+    this.validateEmail = this.validateEmail.bind(this);
 
   }
 
@@ -29,20 +31,33 @@ class RsvpForm extends Component {
     this.setState({ selectedOption: event.target.value });
   }
 
+  validateEmail(input) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(input).toLowerCase());
+  }
+
   handleSubmit(event){
     event.preventDefault();
-    axios.post("/api/rsvp", {
-      name: this.state.name,
-      email: this.state.email,
-      plusone: this.state.plusone,
-      rsvp: this.state.selectedOption,
-      comments: this.state.comments,
-      songs: this.state.songs
-    })
-      .then((res) => {
-        console.log("Successful Insert")
+    if (this.validateEmail(this.state.email)) {
+      console.log("valid")
+      this.setState({invalidEmail: false})
+      axios.post("/api/rsvp", {
+        name: this.state.name,
+        email: this.state.email,
+        plusone: this.state.plusone,
+        rsvp: this.state.selectedOption,
+        comments: this.state.comments,
+        songs: this.state.songs
       })
-    this.props.handleClick()
+        .then((res) => {
+          console.log("Successful Insert")
+        })
+      this.props.handleClick()
+    } else {
+      console.log("INVALID")
+      this.props.invalidEmail()
+      this.setState({invalidEmail: true})
+    }
   }
 
 
@@ -75,6 +90,7 @@ class RsvpForm extends Component {
           <br/><br/>
             {this.state.selectedOption === "1" ? (
               <form className="rsvpForm" onSubmit={this.handleSubmit}>
+                {this.props.invalidState ? "Oops! Please enter a valid email address" : "" } <br/><br/>
                 <label className="rsvpColumn">
                   First & Last Name:
                 </label>
