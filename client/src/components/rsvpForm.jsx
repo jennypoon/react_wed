@@ -38,9 +38,8 @@ class RsvpForm extends Component {
 
   handleSubmit(event){
     event.preventDefault();
+
     if (this.validateEmail(this.state.email)) {
-      console.log("valid")
-      this.setState({invalidEmail: false})
       axios.post("/api/rsvp", {
         name: this.state.name,
         email: this.state.email,
@@ -49,21 +48,18 @@ class RsvpForm extends Component {
         comments: this.state.comments,
         songs: this.state.songs
       })
-        .then((res) => {
-          console.log("Successful Insert")
-        })
+
+      .then((res) => {
+      })
+
       this.props.handleClick()
+
     } else {
-      console.log("INVALID")
-      this.props.invalidEmail()
-      this.setState({invalidEmail: true})
+        this.props.invalidEmail()
     }
   }
 
-
   render() {
-    console.log(this.state)
-
     return (
 
       <div>
@@ -122,6 +118,7 @@ class RsvpForm extends Component {
                 Sorry to hear that you can't make it to our special day! <br/><br/>
 
                 <form className="rsvpForm" onSubmit={this.handleSubmit}>
+                    {this.props.invalidState ? "Oops! Please enter a valid email address" : "" } <br/><br/>
                 <label className="rsvpColumn">
                   First & Last Name:
                 </label>
