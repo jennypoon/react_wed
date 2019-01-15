@@ -306,6 +306,7 @@ input {
 
 .rsvpForm {
   width: 85%;
+  margin-left: 20px;
 }
 
 .rsvpColumn {
@@ -343,6 +344,14 @@ button {
 
 @media screen and (max-width: 500) {
 
+  .rsvpColumn.input {
+    position: relative;
+    margin-top: 0px;
+    width: 50%;
+    float: right;
+    padding: 0px;
+    margin: 0px;
+}
 }
 
 /*VIPS*/
