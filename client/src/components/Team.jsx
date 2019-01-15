@@ -4,32 +4,29 @@ import grace from '../images/grace.jpg'
 import honey from '../images/honey.jpg'
 import abby from '../images/abby.jpg'
 import leora from '../images/leora.jpg'
-import Jenfamily from '../images/family.jpg'
 
 class Team extends Component {
+      // <h2>The FamJam</h2>
+    //   <div className="imgContainer">
+    //     <img src={avatar} alt="Stephen's Family" className="famImage"/>
+    //     <div className="teamHover">
+    //       <div className="teamHoverText">
+    //         <p> Stephen's Family </p>
+    //       </div>
+    //     </div>
+    //   </div>
+
+    //   <div className="imgContainer">
+    //     <img src={Jenfamily} alt="Jenny's Family" className="famImage"/>
+    //     <div className="teamHover">
+    //       <div className="teamHoverText">
+    //         <h1> Jenny's Family </h1>
+    //       </div>
+    //     </div>
+    //   </div>
  render() {
   return (
     <div className="teamComponent">
-
-    <h2>The FamJam</h2>
-      <div className="imgContainer">
-        <img src={avatar} alt="Stephen's Family" className="famImage"/>
-        <div className="teamHover">
-          <div className="teamHoverText">
-            <p> Stephen's Family </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="imgContainer">
-        <img src={Jenfamily} alt="Jenny's Family" className="famImage"/>
-        <div className="teamHover">
-          <div className="teamHoverText">
-            <h1> Jenny's Family </h1>
-          </div>
-        </div>
-      </div>
-
       <h2>The Ladies</h2>
       <div className="teamContainer">
 
