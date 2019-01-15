@@ -262,13 +262,12 @@ p {
   }
 
   .timeline::after {
-    left: 15px;
+    left: 17px;
   }
 
   /* Full-width containers */
   .container {
-  width: 85%;
-  padding-left: 70px;
+  width: 90%;
   padding-right: 25px;
   }
 
