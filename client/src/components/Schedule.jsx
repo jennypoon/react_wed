@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import "../styling/schedule.css"
 import ceremonyLocation from '../images/ceremony_location.png'
 
 
