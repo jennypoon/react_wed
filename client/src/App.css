@@ -21,7 +21,7 @@ h1 {
 }
 
 .jsLogo {
-  z-index: 2;
+
   float: right;
   position: absolute;
   width: 100px;
@@ -35,7 +35,7 @@ h1 {
 
   .jsLogo {
     z-index: 1;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
     position: relative;
     width: 180px;
     height: 200px;
