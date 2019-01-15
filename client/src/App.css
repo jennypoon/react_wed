@@ -170,6 +170,7 @@ h1 {
     display: none;
   }
 }
+
 /*VENUE*/
 p {
   font-family: 'Amaranth', sans-serif;
@@ -357,10 +358,9 @@ button {
   margin-left: 2px;
   position: relative;
   overflow: hidden;
-  max-width: 100%;
-  height: 50%;
+  width: 150px;
+  height: 150px;
   border: 1px solid #808080;
-
 }
 
 .famImage {
@@ -369,7 +369,6 @@ button {
   overflow: hidden;
   display: flex;
 }
-
 
 .indivImage {
   max-width: 130%;
@@ -414,6 +413,11 @@ button {
   }
 
   .imgContainer .famImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .indivImage {
     width: 100%;
     height: 100%;
   }
