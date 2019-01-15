@@ -19,12 +19,12 @@ class RSVP extends Component {
   }
 
   handleInvalidEmail(event) {
-    this.setState({invalidEmail: true})
+    console.log(event)
+    this.setState({invalidEmail: event})
   }
 
-
   render() {
-
+    console.log("RSVP STATE", this.state)
     return (
       <div className="rsvpComponent">
         {this.state.rsvp ? (
@@ -36,7 +36,10 @@ class RSVP extends Component {
           ) : (
           <div>
             <h3> Please RSVP by May 1, 2019</h3>
-            <RsvpForm invalidState={this.state.invalidEmail} handleClick= {this.handleClick} invalidEmail= {this.handleInvalidEmail} />
+            <RsvpForm invalidState={this.state.invalidEmail}
+                      handleClick= {this.handleClick}
+                      invalidEmail= {this.handleInvalidEmail}
+                      />
           </div>
         )}
       </div>

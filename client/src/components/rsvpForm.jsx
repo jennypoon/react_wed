@@ -28,7 +28,9 @@ class RsvpForm extends Component {
   }
 
   handleOptionChange(event) {
+    console.log("handlechange")
     this.setState({ selectedOption: event.target.value });
+    this.props.invalidEmail(false)
   }
 
   validateEmail(input) {
@@ -55,7 +57,8 @@ class RsvpForm extends Component {
       this.props.handleClick()
 
     } else {
-        this.props.invalidEmail()
+      console.log("handle submit")
+        this.props.invalidEmail(true)
     }
   }
 
@@ -83,55 +86,55 @@ class RsvpForm extends Component {
             Sorry, can't make it
           </label>
 
-          <br/><br/>
-            {this.state.selectedOption === "1" ? (
+          {this.state.selectedOption === "1" ? (
+            <form className="rsvpForm" onSubmit={this.handleSubmit}>
+              <p>Please complete this form:</p>
+              {this.props.invalidState ? (<p style={{color:"red"}}>Please enter a valid email address</p>) : "" }
+              <label className="rsvpColumn">
+                First & Last Name:
+              </label>
+              <input className="rsvpColumn input" type="text" name="name" onChange={this.handleChange} required ></input><br/><br/>
+
+              <label className="rsvpColumn">
+                Email:
+              </label>
+              <input className="rsvpColumn input" type="text" name="email" onChange={this.handleChange} required ></input><br/><br/>
+
+              <label className="rsvpColumn">
+                Plus 1's Name(s):
+              </label>
+              <input className="rsvpColumn input" type="text" name="plusone" onChange={this.handleChange}></input><br/><br/>
+
+              <label className="rsvpColumn">
+               Song Requests:
+              </label>
+              <input className="rsvpColumn input" type="text" name="songs" onChange={this.handleChange}></input><br/><br/>
+
+               <label className="rsvpColumn">
+               Comments:
+              </label>
+              <input className="rsvpColumn comment" type="text" name="comments" onChange={this.handleChange}></input><br/><br/>
+              <button className="rsvpButton" onClick={this.handleClick}> Submit your RSVP! </button>
+            </form>
+            ) : (
+            <div>
+
               <form className="rsvpForm" onSubmit={this.handleSubmit}>
-                {this.props.invalidState ? "Oops! Please enter a valid email address" : "" } <br/><br/>
-                <label className="rsvpColumn">
-                  First & Last Name:
-                </label>
-                <input className="rsvpColumn input" type="text" name="name" onChange={this.handleChange} required ></input><br/><br/>
+                <p>Sorry to hear that you can't make it to our special day!</p>
+                {this.props.invalidState ? (<p style={{color:"red"}}>Please enter a valid email address</p>) : "" }
+              <label className="rsvpColumn">
+                First & Last Name:
+              </label>
+              <input className="rsvpColumn input" type="text" name="name" onChange={this.handleChange} required ></input><br/><br/>
 
-                <label className="rsvpColumn">
-                  Email:
-                </label>
-                <input className="rsvpColumn input" type="text" name="email" onChange={this.handleChange} required ></input><br/><br/>
+              <label className="rsvpColumn">
+                Email:
+              </label>
+              <input className="rsvpColumn input" type="text" name="email" onChange={this.handleChange} required ></input><br/><br/>
 
-                <label className="rsvpColumn">
-                  Plus 1's Name(s):
-                </label>
-                <input className="rsvpColumn input" type="text" name="plusone" onChange={this.handleChange}></input><br/><br/>
-
-                <label className="rsvpColumn">
-                 Song Requests:
-                </label>
-                <input className="rsvpColumn input" type="text" name="songs" onChange={this.handleChange}></input><br/><br/>
-
-                 <label className="rsvpColumn">
-                 Comments:
-                </label>
-                <input className="rsvpColumn comment" type="text" name="comments" onChange={this.handleChange}></input><br/><br/>
-                <button className="rsvpButton" onClick={this.handleClick}> Submit your RSVP! </button>
+              <button className="rsvpButton" onClick={this.handleClick}> Submit your RSVP! </button>
               </form>
-              ) : (
-              <div>
-                Sorry to hear that you can't make it to our special day! <br/><br/>
-
-                <form className="rsvpForm" onSubmit={this.handleSubmit}>
-                    {this.props.invalidState ? "Oops! Please enter a valid email address" : "" } <br/><br/>
-                <label className="rsvpColumn">
-                  First & Last Name:
-                </label>
-                <input className="rsvpColumn input" type="text" name="name" onChange={this.handleChange} required ></input><br/><br/>
-
-                <label className="rsvpColumn">
-                  Email:
-                </label>
-                <input className="rsvpColumn input" type="text" name="email" onChange={this.handleChange} required ></input><br/><br/>
-
-                <button className="rsvpButton" onClick={this.handleClick}> Submit your RSVP! </button>
-                </form>
-              </div>)}
+            </div>)}
           </div>
       )}
 }
