@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styling/sideimage.css';
 
 function SideImage() {
     return (
