@@ -89,7 +89,7 @@ class RsvpForm extends Component {
           {this.state.selectedOption === "1" ? (
             <form className="rsvpForm" onSubmit={this.handleSubmit}>
               <p>Please complete this form:</p>
-              {this.props.invalidState ? (<p style={{color:"red"}}>Please enter a valid email address</p>) : "" }
+              {this.props.invalidState ? (<p style={{color:"red",textAlign:"center"}}> - - Please enter a valid email address - - </p>) : "" }
               <label className="rsvpColumn">
                 First & Last Name:
               </label>
@@ -121,7 +121,7 @@ class RsvpForm extends Component {
 
               <form className="rsvpForm" onSubmit={this.handleSubmit}>
                 <p>Sorry to hear that you can't make it to our special day!</p>
-                {this.props.invalidState ? (<p style={{color:"red"}}>Please enter a valid email address</p>) : "" }
+              {this.props.invalidState ? (<p style={{color:"red",textAlign:"center"}}> - - Please enter a valid email address - - </p>) : "" }
               <label className="rsvpColumn">
                 First & Last Name:
               </label>
