@@ -53,9 +53,9 @@
     position: absolute;
     display: block;
     overflow-x: hidden;
-    min-width: 200%;
+    width: 100%;
+    left: 0%;
     top: 0%;
-    left: -45%;
     height: 40%;
     animation: none;
   }
@@ -71,9 +71,9 @@
     overflow-x: hidden;
     display: block;
     background-size: cover;
-    min-width: 200%;
+    width: 100%;
+    left: 0%;
     top: 0%;
-    left: -45%;
     height: 35%;
     animation: none;
   }
