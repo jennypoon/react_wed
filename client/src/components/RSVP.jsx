@@ -6,14 +6,20 @@ class RSVP extends Component {
     super(props);
 
     this.state = {
-      rsvp: ""
+      rsvp: "",
+      invalidEmail: false
     };
 
     this.handleClick = this.handleClick.bind(this);
+    this.handleInvalidEmail = this.handleInvalidEmail.bind(this);
   }
 
   handleClick(event) {
     this.setState({ rsvp: true });
+  }
+
+  handleInvalidEmail(event) {
+    this.setState({invalidEmail: true})
   }
 
 
@@ -30,7 +36,7 @@ class RSVP extends Component {
           ) : (
           <div>
             <h3> Please RSVP by May 1, 2019</h3>
-            <RsvpForm handleClick= {this.handleClick} />
+            <RsvpForm invalidState={this.state.invalidEmail} handleClick= {this.handleClick} invalidEmail= {this.handleInvalidEmail} />
           </div>
         )}
       </div>
