@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import "../styling/venue.css";
 import ceremonyLocation from '../images/ceremony_location.png'
 import parkingLocation from '../images/parking.png'
 

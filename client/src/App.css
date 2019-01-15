@@ -170,6 +170,18 @@ h1 {
     display: none;
   }
 }
+/*VENUE*/
+p {
+  font-family: 'Amaranth', sans-serif;
+}
+
+.venueComponent {
+  margin-top: 20px;
+  margin: 10px;
+  box-shadow: 1px 2px 1px 2px #D3D3D3;
+  padding: 15px;
+  align-content: center
+}
 
 /*SCHEDULE*/
 .imageCeremony {
