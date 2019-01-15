@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../styling/team.css';
 import avatar from '../images/avatar.png'
 import grace from '../images/grace.jpg'
 import honey from '../images/honey.jpg'
