@@ -113,7 +113,7 @@ class RsvpForm extends Component {
                <label className="rsvpColumn">
                Comments:
               </label>
-              <input className="rsvpColumn comment" type="text" name="comments" onChange={this.handleChange}></input><br/><br/>
+              <input className="rsvpColumn comment" type="text" name="comments" onChange={this.handleChange}></input><br/><br/><br/><br/>
               <button className="rsvpButton" onClick={this.handleClick}> Submit your RSVP! </button>
             </form>
             ) : (
@@ -130,7 +130,7 @@ class RsvpForm extends Component {
               <label className="rsvpColumn">
                 Email:
               </label>
-              <input className="rsvpColumn input" type="text" name="email" onChange={this.handleChange} required ></input><br/><br/>
+              <input className="rsvpColumn input" type="text" name="email" onChange={this.handleChange} required ></input><br/><br/><br/><br/>
 
               <button className="rsvpButton" onClick={this.handleClick}> Submit your RSVP! </button>
               </form>
