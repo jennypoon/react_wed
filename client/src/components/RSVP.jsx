@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import "../styling/rsvp.css";
 import RsvpForm from "../components/rsvpForm.jsx";
 
 class RSVP extends Component {
