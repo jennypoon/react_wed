@@ -341,17 +341,16 @@ button {
 }
 
 .teamContainer {
-  width: 80%;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
   line-height: 20px;
   -webkit-column-count: 4;
-  -webkit-column-gap:   0;
+  -webkit-column-gap:   1;
   -moz-column-count:    4;
-  -moz-column-gap:      0;
+  -moz-column-gap:      1;
   column-count:         4;
-  column-gap:           0;
+  column-gap:           1;
 }
 
 .imgContainer {
