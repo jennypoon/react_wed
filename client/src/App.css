@@ -62,3 +62,27 @@ h1 {
     display: none
   }
 }
+
+
+/*COUNTDOWN*/
+.Countdown {
+  float: right;
+  font-family: 'Julius Sans One', sans-serif;
+  margin-top: 10px;
+  width: 35%;
+}
+
+.Countdown-col{
+  display: inline-block;
+}
+
+.Countdown-col-element{
+  display: inline-block;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .Countdown {
+    display: none;
+  }
+}

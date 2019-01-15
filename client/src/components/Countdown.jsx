@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import '../styling/countdown.css';
-
 
 class Countdown extends Component {
   constructor(props) {
