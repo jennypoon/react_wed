@@ -80,7 +80,19 @@ class Team extends Component {
           <img src={avatar} alt="Groomsmen" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
-              <p>Groomsmen</p>
+              <p>C H R I S</p>
+              <p>Best Man</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <div className="imgContainer">
+          <img src={avatar} alt="Groomsmen" className="indivImage"/>
+          <div className="teamHover">
+            <div className="teamHoverText">
+              <p>K E V I N</p>
+              <p></p>
             </div>
           </div>
         </div>
@@ -98,16 +110,8 @@ class Team extends Component {
           <img src={avatar} alt="Groomsmen" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
-              <p> Groomsmen </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="imgContainer">
-          <img src={avatar} alt="Groomsmen" className="indivImage"/>
-          <div className="teamHover">
-            <div className="teamHoverText">
-              <p> Groomsmen </p>
+              <p> B R I A N </p>
+              <p></p>
             </div>
           </div>
         </div>
