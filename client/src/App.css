@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Amaranth:400,400i,700|Dosis:500,600,700|Signika+Negative:400,600|Cookie');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Amaranth:400,400i,700|Cookie');
 <
 
 .App {
@@ -7,7 +7,7 @@
 
 
 h1 {
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Cookie', cursive;
   letter-spacing: 0.05em;
 }
 
@@ -26,7 +26,7 @@ h1 {
   margin-left: 51%;
   letter-spacing: 0.09em;
   font-family: 'Cookie', cursive;
-  color: #319177;
+  color: #064F40;
   font-size: 50px;
 }
 
@@ -39,6 +39,21 @@ h1 {
   opacity: 0.4;
   padding: 1%;
   margin-left: 45%;
+}
+
+.headerDate {
+  display: none;
+  font-family: 'Julius Sans One', sans-serif;
+  margin-left: 5%;
+  text-shadow: 0 0 32px black;
+  margin-top: 20%;
+  float: left;
+  z-index: 1;
+  position: fixed;
+  padding: 2%;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 1.5em;
 }
 
 @media screen and (max-width: 988px) {
@@ -60,13 +75,16 @@ h1 {
   .headerName {
     margin-left: 5%;
     text-shadow: 0 0 32px black;
-    margin-top: 10%;
+    margin-top: 8%;
     float: left;
     z-index: 1;
-    position: absolute;
+    position: fixed;
     padding: 2%;
     color: white;
-    font-size: 3.5em;
+    font-size: 3em;
+  }
+  .headerDate {
+    display: block;
   }
 }
 
@@ -318,10 +336,15 @@ p {
   align-content: center
 }
 
+.left p {
+  margin-left: 20px;
+}
+
 .right {
+  margin-left: 10px;
+  margin-top: 5px;
   display: block;
   position: relative;
-  margin-left: 35%;
   padding: 5px;
 }
 
@@ -368,16 +391,37 @@ button {
   padding: 10px;
 }
 
-@media screen and (max-width: 500) {
+@media screen and (max-width: 500px) {
+
+  .right {
+    margin-left: 10px;
+    margin-top: 0px;
+    display: block;
+    position: relative;
+    padding-top: 0px;
+    padding: 5px;
+  }
+
 
   .rsvpColumn.input {
     position: relative;
     margin-top: 0px;
     width: 50%;
+    padding: 1px;
     float: right;
-    padding: 0px;
+    margin: 0px;
+  }
+
+  .rsvpColumn.comment {
+    position: relative;
+    margin-top: 0px;
+    width: 50%;
+    height: 40px;
+    float: right;
+    padding: 1px;
     margin: 0px;
 }
+
 }
 
 /*VIPS*/
