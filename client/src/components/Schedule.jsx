@@ -5,8 +5,9 @@ import ceremonyLocation from '../images/ceremony_location.png'
 class Schedule extends Component {
  render() {
   return (
+    <div>
+    <h2>August 24, 2019</h2>
     <div class="timeline">
-
       <div class="container circle">
         <div class="content">
           <h2>4:00PM | Ceremony</h2>
@@ -37,8 +38,7 @@ class Schedule extends Component {
       </div>
     </div>
 
-
-
+  </div>
   </div>
   )}
 }
