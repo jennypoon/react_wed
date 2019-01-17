@@ -81,7 +81,7 @@ class Countdown extends Component {
         <span className="Countdown-col">
           <span className="Countdown-col-element">
               <strong>{this.addLeadingZeros(countDown.days)}</strong>
-              <span>{countDown.days === 1 ? 'Day' : 'Days'}</span>
+              <span>{countDown.days === 1 ? ' Day' : ' Days'}</span>
           </span>
         </span>
 

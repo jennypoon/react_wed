@@ -26,8 +26,8 @@ h1 {
   margin-left: 51%;
   letter-spacing: 0.09em;
   font-family: 'Cookie', cursive;
-  color: #00A86B;
-  font-size: 40px;
+  color: #319177;
+  font-size: 50px;
 }
 
 
@@ -58,15 +58,15 @@ h1 {
   }
 
   .headerName {
-    margin-left: 10px;
+    margin-left: 5%;
     text-shadow: 0 0 32px black;
-    margin-top: 0%;
+    margin-top: 10%;
     float: left;
     z-index: 1;
     position: absolute;
     padding: 2%;
     color: white;
-    font-size: 2.5em;
+    font-size: 3.5em;
   }
 }
 
