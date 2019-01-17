@@ -19,7 +19,7 @@ function Faq() {
           What should I wear? Are there colour I need to avoid?
         </p>
         <p className="answer">
-        Semi-formal attire. Bridesmaid will be wearing light pink and groomsmen will be wearing grey. Please no jeans or casual T-shirt’s. I mean, you could, but just a warning, the photographer will either avoid you all night or they’ll call you out and put you on the worst dress list (not my words, theirs!). We will be dancing the night away so please wear comfortable shoes. TB to the 90’s baby! If you got songs, let us know!
+        Semi-formal attire. Bridesmaid will be wearing light pink and groomsmen will be wearing grey. Please no jeans or casual T-shirt’s. I mean, you could, but just a warning, the photographer will either avoid you all night or they’ll call you out and put you on the worst dress list (not my words, theirs!). We will be dancing the night away so please wear comfortable shoes. TB to the 90’s baby! If you got songs, let us know when you RSVP!
         </p>
       </div>
 
@@ -28,7 +28,7 @@ function Faq() {
         Where is the event?
         </p>
         <p className="answer">
-        The reception is held at south bonson community center and the ceremony will be held on the wharf nearby. There will be signs to direct you from the parking lot.
+        The reception is held at South Bonson Community Center and the ceremony will be held on the wharf nearby. There will be signs to direct you from the parking lot.
         </p> <br/>
         <img src={ceremonyLocation} width="100%" height="100%" alt="ceremony location" />
       </div>
@@ -39,7 +39,7 @@ function Faq() {
         </p>
         <p className="answer">
           Yes! Parking is free. Please print this <a href="https://docs.google.com/document/d/1FIkEgIjHucjm_Y0VeZA-qo69UYID61Srx4NWYGFuEns/edit?usp=sharing" target="_blank" rel="noopener noreferrer">parking pass</a> and place it on your dashboard when you come.
-          You can park here:
+          You can park anywhere highlighed in red:
         </p>
         <br/>
         <img src={parkingLocation} width="100%" height="100%" alt="parking location" />
@@ -71,7 +71,7 @@ function Faq() {
           Do you have a registry?
         </p>
         <p className="answer">
-          Nope, and we don’t plan to get one! We don’t need anything, we’re just glad that you’re coming to celebrate this big moment with us :)
+          With all that we have, we've been truly blessed. Your presence and good wishes are all that we request! But if you desire to give nonetheless, Monetary gift is the one we suggest.
         </p>
       </div>
 
