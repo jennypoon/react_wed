@@ -67,7 +67,7 @@ class RsvpForm extends Component {
 
       <div>
           <label className="left">
-            Can you make it?
+            <p>Can we expect you on August 24, 2019?</p>
           </label>
 
           <label className="right">
