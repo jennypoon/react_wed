@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Amaranth:400,400i,700|Dosis:500,600,700|Signika+Negative:400,600');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Amaranth:400,400i,700|Dosis:500,600,700|Signika+Negative:400,600|Cookie');
 <
 
 .App {
@@ -20,13 +20,23 @@ h1 {
   opacity: 0.8;
 }
 
-.jsLogo {
+.headerName {
+  float: right;
+  position: absolute;
+  margin-left: 51%;
+  letter-spacing: 0.09em;
+  font-family: 'Cookie', cursive;
+  color: #00A86B;
+  font-size: 40px;
+}
 
+
+.jsLogo {
   float: right;
   position: absolute;
   width: 100px;
   height: 120px;
-  opacity: 0.6;
+  opacity: 0.4;
   padding: 1%;
   margin-left: 45%;
 }
@@ -46,6 +56,18 @@ h1 {
   .floralPinkPeach {
     display: none
   }
+
+  .headerName {
+    margin-left: 10px;
+    text-shadow: 0 0 32px black;
+    margin-top: 0%;
+    float: left;
+    z-index: 1;
+    position: absolute;
+    padding: 2%;
+    color: white;
+    font-size: 2.5em;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -61,6 +83,7 @@ h1 {
   .floralPinkPeach {
     display: none
   }
+
 }
 
 /*IMAGE SLIDERS*/
