@@ -10,7 +10,7 @@ function Faq() {
           Can we bring our kids?
         </p>
         <p className="answer">
-          We love kids and love playing with them but unfortunately, we do not have room! Take this as an opportunity to let your hair down and have fun! We love you and want you to be here, and if the only reason why you can’t come is because you can’t find a sitter, let us know and we’ll think of something.
+          We love kids and love playing with them but unfortunately, we do not have room unless you are immediate family! Take this as an opportunity to let your hair down and have fun! We love you and want you to be here, and if the only reason why you can’t come is because you can’t find a sitter, let us know and we’ll think of something.
         </p>
       </div>
 
