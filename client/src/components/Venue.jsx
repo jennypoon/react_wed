@@ -33,12 +33,10 @@ class Venue extends Component {
       </div>
       <div className="venueDetails">
         <h3> CEREMONY </h3>
-        <p> The ceremony will be held at the whalf located about 500ft from the venue </p>
-        <p> There will be signs to help guide you </p>
+        <p> The ceremony will be held at the wharf located about 500ft from the venue. There will be signs to help guide you </p>
         <img src={ceremonyLocation} width="100%" height="100%" alt="ceremony location" />
         <h3> PARKING </h3>
-        <p> Parking is F r e e. Please print this <a href="https://docs.google.com/document/d/1FIkEgIjHucjm_Y0VeZA-qo69UYID61Srx4NWYGFuEns/edit?usp=sharing" target="_blank" rel="noopener noreferrer">parking pass</a> and place it on your dashboard </p>
-        <p> Parking areas are highlighed in red below </p>
+        <p> Parking is F r e e. Please print this <a href="https://docs.google.com/document/d/1FIkEgIjHucjm_Y0VeZA-qo69UYID61Srx4NWYGFuEns/edit?usp=sharing" target="_blank" rel="noopener noreferrer">parking pass</a> and place it on your dashboard. Parking areas are highlighed in red below </p>
         <p> There are both street parking and a parking lot available. Carpooling is highlighly recommended as parking is rather limited </p>
         <img src={parkingLocation} width="100%" height="100%" alt="parking location" />
       </div>
