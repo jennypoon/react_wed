@@ -8,7 +8,7 @@ function OurStory() {
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="Jenny: I think we bonded over the fact we were both from Surrey...like what are the chances?!"
+          date="Jenny: I think we bonded over the fact we were both from Surrey...like what are the chances?! (｡◕‿◕｡)"
           style={{ backgroundImage: `url(require("../images/background.jpg")}` } }
         >
           <h4 className="vertical-timeline-element-subtitle">April 15, 2012 - First Encounter </h4>
@@ -18,7 +18,7 @@ function OurStory() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="Jenny: Just so we're all clear - I wasn't stalking him... I was just curious! Stephen: I wasn't playing hard to get, I just don't use Facebook! She's lucky I decided to sign into my account that night"
+          date="Jenny: Just so we're all clear - I wasn't stalking him... I was just curious! ┬┴┤( ･ _├┬┴ Stephen: I wasn't playing hard to get, I just don't use Facebook! She's lucky I decided to sign into my account that night ~(˘▾˘~)"
         >
           <h4 className="vertical-timeline-element-subtitle">April 27, 2012 - First Move</h4>
           <p>
@@ -27,7 +27,7 @@ function OurStory() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="Jenny: FYI - In addition to Surrey having the best Viet restaurants in the Lower Mainland, come to Main Choice Resturant for AWESOME CHINESE FOOD! (Main Choice Restaurant is Stephen's family restaurant, I was not paid to say this ¯\_(ツ)_/¯)"
+          date="Jenny: FYI - In addition to Surrey having the best Viet restaurants in the Lower Mainland, ლ(´ڡ`ლ) come to Main Choice Resturant for AWESOME CHINESE FOOD! (Main Choice Restaurant is Stephen's family restaurant, I was not paid to say this (ღ˘⌣˘ღ))"
         >
           <h4 className="vertical-timeline-element-subtitle">May 2, 2012 - First Date</h4>
           <p>
@@ -36,7 +36,7 @@ function OurStory() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="Stephen: I was ready to ask her in May but she didn't give me a chance! She bolted out of the car so fast at the end of our date"
+          date="Stephen: I was ready to ask her in May but she didn't give me a chance! ᕙ(⇀‸↼‶)ᕗ She bolted out of the car so fast at the end of our date"
         >
           <h4 className="vertical-timeline-element-subtitle">June 14, 2012 - We're an Item</h4>
           <p>
@@ -45,7 +45,7 @@ function OurStory() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education eventBox"
-          date="Jenny: One time, He mailed french macarons from Paris to my workplace, what a sweetheart right?!"
+          date="Jenny: One time, He mailed french macarons from Paris to my workplace, what a sweetheart right?! (｡◕‿‿◕｡)"
         >
           <h4 className="vertical-timeline-element-subtitle">Sept - Dec 2012 - Long Distance</h4>
           <p>
@@ -55,7 +55,7 @@ function OurStory() {
 
          <VerticalTimelineElement
           className="vertical-timeline-element--education eventBox"
-          date="FAST FORWARD! --- Jenny: Stephen was actually in Whitehorse at the time, so I had to give him a tour of the house using WhatsApp video. Stephen: The quality was so laggy, I didn't see ANYTHING but she's more picky than I am. If she's happy, I'm happy!"
+          date="FAST FORWARD! --- Jenny: Stephen was actually in Whitehorse at the time, so I had to give him a tour of the house using WhatsApp video. (._.) ( l: ) ( .-. ) ʕ•ᴥ•ʔ ( :l ) (._.) ( l: ) Stephen: The quality was so laggy, I didn't see ANYTHING but she's more picky than I am. If she's happy, I'm happy! (°ロ°)☝"
         >
           <h4 className="vertical-timeline-element-title">July 2017 - First Home</h4>
           <p>
@@ -65,7 +65,7 @@ function OurStory() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education eventBox"
-          date="Jenny: He doesn't even know how to play the piano! I was so impressed! I don't even know when he had the time to practice since we see each other pretty much everyday!"
+          date="Jenny: He doesn't even know how to play the piano! I was so impressed! ♥‿♥ I don't even know when he had the time to practice since we see each other pretty much everyday! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
         >
           <h4 className="vertical-timeline-element-subtitle">January 28, 2012 - The Proposal</h4>
           <p>
@@ -75,7 +75,7 @@ function OurStory() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="Lets get the party started!"
+          date="Lets get the party started! ♪~ ᕕ( ᐛ ) ᕗ"
         >
           <h3 className="vertical-timeline-element-title">August 24, 2019 - The Wedding</h3>
           <p>
