@@ -10,8 +10,8 @@ class RsvpForm extends Component {
       name: "",
       email: "",
       plusone: "null",
-      comments: "null",
-      songs: "null",
+      mailAddress: "null",
+      guestNames: "null",
       invalidEmail: false
     };
 
@@ -24,6 +24,7 @@ class RsvpForm extends Component {
 
   handleChange(event) {
     event.preventDefault();
+    console.log(event.target.name)
     this.setState({ [event.target.name]: event.target.value });
   }
 
@@ -46,8 +47,8 @@ class RsvpForm extends Component {
         email: this.state.email,
         plusone: this.state.plusone,
         rsvp: this.state.selectedOption,
-        comments: this.state.comments,
-        songs: this.state.songs
+        comments: this.state.mailAddress,
+        songs: this.state.guestNames
       })
 
       .then((res) => {
@@ -56,7 +57,6 @@ class RsvpForm extends Component {
       this.props.handleClick()
 
     } else {
-      console.log("handle submit")
         this.props.invalidEmail(true)
     }
   }
@@ -90,7 +90,7 @@ class RsvpForm extends Component {
               <p>Please complete this form:</p>
               {this.props.invalidState ? (<p style={{color:"red",textAlign:"center"}}> - - Please enter a valid email address - - </p>) : "" }
               <label className="rsvpColumn">
-                Your First & Last Name:
+                First & Last Name:
               </label>
               <input className="rsvpColumn input" type="text" name="name" onChange={this.handleChange} required ></input><br/><br/>
 
@@ -107,12 +107,12 @@ class RsvpForm extends Component {
               <label className="rsvpColumn">
                Full Name of Guests:
               </label>
-              <input className="rsvpColumn input" type="text" name="songs" onChange={this.handleChange}></input><br/><br/>
+              <input className="rsvpColumn input" type="text" name="guestNames" onChange={this.handleChange}></input><br/><br/>
 
                <label className="rsvpColumn">
                Mailing Address:
               </label>
-              <textarea className="rsvpColumn comment" type="text" name="comments" onChange={this.handleChange}></textarea><br/><br/><br/><br/>
+              <textarea className="rsvpColumn comment" type="text" name="mailAddress" onChange={this.handleChange}></textarea><br/><br/><br/><br/>
               <button className="rsvpButton" onClick={this.handleClick}> Submit your RSVP! </button>
             </form>
             ) : (
