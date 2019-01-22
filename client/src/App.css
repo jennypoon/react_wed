@@ -422,7 +422,7 @@ input, textarea {
   float: right;
   padding: 6px;
   margin: 0px;
-  border: #e4e4e4 solid 0.5px;
+  border: solid 0.5px;
 }
 
 button {
