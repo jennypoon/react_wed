@@ -30,7 +30,6 @@ h1 {
   font-size: 50px;
 }
 
-
 .jsLogo {
   float: right;
   position: absolute;
@@ -388,7 +387,7 @@ p {
   padding: 5px;
 }
 
-input {
+input, textarea {
   margin-left: 10px;
   padding: 0px;
 }
@@ -415,13 +414,15 @@ input {
 }
 
 .rsvpColumn.comment {
+  resize: none;
   position: relative;
   margin-top: 0px;
   width: 50%;
   height: 40px;
   float: right;
-  padding: 5px;
+  padding: 6px;
   margin: 0px;
+  border: #e4e4e4 solid 0.5px;
 }
 
 button {
