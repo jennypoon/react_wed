@@ -28,7 +28,7 @@ class Admin extends Component {
         <tr key={ guest.id }>
           <td>{ guest.id }</td>
           <td>{ guest.name }</td>
-          <td>{ guest.rsvp === 1 ? "Coming" : "Not Coming" }</td>
+          <td>{ guest.rsvp === 1 ? "Yes" : "No" }</td>
           <td>{ guest.email }</td>
           <td>{ guest.plus_one }</td>
           <td>{ guest.song_requests }</td>
@@ -48,17 +48,17 @@ class Admin extends Component {
     return (
       <div className="admin">
         <h1>RSVP List</h1>
-        <p> Total Guest Count: { list.length } </p>
+        <p> Total Number of Entries: { list.length } </p>
         <table>
           <tbody>
            <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>RSVP</th>
+            <th style={{width: '3%'}}>#</th>
+            <th style={{width: '8%'}}>Name</th>
+            <th style={{width: '3%'}}>RSVP</th>
             <th>Email</th>
-            <th>Plus Ones</th>
-            <th>Song Requests</th>
-            <th>Comments</th>
+            <th style={{width: '3%'}}># of Attendees</th>
+            <th>Guest Full Names</th>
+            <th>Mailing Address</th>
           </tr>
           { this.displayList(list) }
           </tbody>
