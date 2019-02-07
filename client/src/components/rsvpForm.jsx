@@ -122,7 +122,7 @@ class RsvpForm extends Component {
                 <p>Sorry to hear that you can't make it to our special day!</p>
               {this.props.invalidState ? (<p style={{color:"red",textAlign:"center"}}> - - Please enter a valid email address - - </p>) : "" }
               <label className="rsvpColumn">
-                Your First & Last Name:
+                First & Last Name:
               </label>
               <input className="rsvpColumn input" type="text" name="name" onChange={this.handleChange} required ></input><br/><br/>
 
