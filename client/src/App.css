@@ -483,6 +483,50 @@ button {
   column-gap:           1;
 }
 
+
+/*FOUR CORNERS*/
+.GentsContainer {
+  margin: 0 auto;
+  display: flex;
+}
+
+.groupPicture {
+  width: 400px;
+  height: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.groupImage {
+  width: 100%;
+  height: auto;
+}
+
+.groupPicture .teamHoverText {
+  text-align: center;
+  padding-right: 8px;
+  font-size: 1em;
+}
+
+.groupPicture .teamHover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.groupPicture:hover .teamHover {
+  opacity: 1;
+}
+
+/*Standard*/
 .imgContainer {
   margin-left: 2px;
   position: relative;
@@ -490,13 +534,6 @@ button {
   width: 150px;
   height: 150px;
   border: 1px solid #808080;
-}
-
-.famImage {
-  max-width: 130%;
-  height: 340px;
-  overflow: hidden;
-  display: flex;
 }
 
 .indivImage {
@@ -517,14 +554,17 @@ button {
   color: #fff;
   transition: all 0.4s ease-in-out 0s;
 }
+
 .imgContainer .teamHoverText {
   text-align: center;
   padding-right: 8px;
+  font-size: 1em;
 }
 
 .imgContainer:hover .teamHover {
   opacity: 1;
 }
+
 
 @media screen and (max-width: 700px) {
   .teamContainer {
@@ -540,6 +580,14 @@ button {
     column-count:         2;
     column-gap:           0;
   }
+  .GentsContainer {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+
+  }
 
   .imgContainer .famImage {
     width: 100%;
@@ -549,6 +597,9 @@ button {
   .indivImage {
     width: 100%;
     height: 100%;
+  }
+  .teamHoverText p {
+    font-size: 1.20em;
   }
 }
 
