@@ -1,32 +1,16 @@
 import React, { Component } from 'react';
-import avatar from '../images/avatar.png'
 import grace from '../images/grace.jpg'
 import honey from '../images/honey.jpg'
 import abby from '../images/abby.jpg'
 import leora from '../images/leora.jpg'
+import fourCorner from '../images/four_corners2.jpg'
+import wilson from '../images/wilson.jpg'
 
 class Team extends Component {
-      // <h2>The FamJam</h2>
-    //   <div className="imgContainer">
-    //     <img src={avatar} alt="Stephen's Family" className="famImage"/>
-    //     <div className="teamHover">
-    //       <div className="teamHoverText">
-    //         <p> Stephen's Family </p>
-    //       </div>
-    //     </div>
-    //   </div>
 
-    //   <div className="imgContainer">
-    //     <img src={Jenfamily} alt="Jenny's Family" className="famImage"/>
-    //     <div className="teamHover">
-    //       <div className="teamHoverText">
-    //         <h1> Jenny's Family </h1>
-    //       </div>
-    //     </div>
-    //   </div>
  render() {
   return (
-    <div className="teamComponent">
+    <div>
       <h2>The Ladies</h2>
       <div className="teamContainer">
 
@@ -74,51 +58,32 @@ class Team extends Component {
       </div>
 
       <h2>The Gents</h2>
-      <div className="teamContainer">
-
-        <div className="imgContainer">
-          <img src={avatar} alt="Groomsmen" className="indivImage"/>
-          <div className="teamHover">
-            <div className="teamHoverText">
-              <p>C H R I S</p>
-              <p>Best Man</p>
-              <p></p>
-            </div>
+      <div className="GentsContainer">
+        <div className="groupPicture">
+          <img src={fourCorner} alt="Four Corners" className="groupImage"/>
+        <div className="teamHover">
+          <div className="teamHoverText">
+            <p> Throwback Thursday #tbt</p>
+            <p> Left to Right </p>
+            <p> Chris - Best Man </p>
+            <p> Kevin - Groomsmen </p>
+            <p> Brian - Groomsmen </p>
           </div>
         </div>
-
-        <div className="imgContainer">
-          <img src={avatar} alt="Groomsmen" className="indivImage"/>
-          <div className="teamHover">
-            <div className="teamHoverText">
-              <p>K E V I N</p>
-              <p></p>
-            </div>
-          </div>
-        </div>
-
-        <div className="imgContainer">
-          <img src={avatar} alt="Groomsmen" className="indivImage"/>
-          <div className="teamHover">
-            <div className="teamHoverText">
-              <p> Groomsmen </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="imgContainer">
-          <img src={avatar} alt="Groomsmen" className="indivImage"/>
-          <div className="teamHover">
-            <div className="teamHoverText">
-              <p> B R I A N </p>
-              <p></p>
-            </div>
-          </div>
-        </div>
-
       </div>
 
+        <div className="imgContainer">
+          <img src={wilson} alt="Groomsmen" className="indivImage"/>
+          <div className="teamHover">
+            <div className="teamHoverText">
+              <p> W I L S O N </p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
   )}
 }
 
