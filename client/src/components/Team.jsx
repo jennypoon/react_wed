@@ -3,8 +3,10 @@ import grace from '../images/grace.jpg'
 import honey from '../images/honey.jpg'
 import abby from '../images/abby.jpg'
 import leora from '../images/leora.jpg'
-import fourCorner from '../images/four_corners2.jpg'
 import wilson from '../images/wilson.jpg'
+import brian from '../images/brian.jpg'
+import kevin from '../images/kevin.jpg'
+import chris from '../images/chris.jpg'
 
 class Team extends Component {
 
@@ -57,31 +59,50 @@ class Team extends Component {
 
       </div>
 
-      <h2>The Gents</h2>
-      <div className="GentsContainer">
-        <div className="groupPicture">
-          <img src={fourCorner} alt="Four Corners" className="groupImage"/>
-        <div className="teamHover">
-          <div className="teamHoverText">
-            <p> Throwback Thursday #tbt</p>
-            <p> Left to Right </p>
-            <p> Chris - Best Man </p>
-            <p> Kevin - Groomsmen </p>
-            <p> Brian - Groomsmen </p>
+    <h2>The Gents</h2>
+      <div className="teamContainer">
+
+        <div className="imgContainer">
+          <img src={chris} alt="Best Man" className="indivImage"/>
+          <div className="teamHover">
+            <div className="teamHoverText">
+              <p>C H R I S</p>
+              <p>Best Man</p>
+            </div>
           </div>
         </div>
-      </div>
+
+        <div className="imgContainer">
+          <img src={kevin} alt="Groomsmen" className="indivImage"/>
+          <div className="teamHover">
+            <div className="teamHoverText">
+              <p>K E V I N</p>
+            </div>
+          </div>
+        </div>
 
         <div className="imgContainer">
           <img src={wilson} alt="Groomsmen" className="indivImage"/>
           <div className="teamHover">
             <div className="teamHoverText">
-              <p> W I L S O N </p>
-              <p></p>
+              <p>W I L S O N</p>
             </div>
           </div>
         </div>
+
+        <div className="imgContainer">
+          <img src={brian} alt="Groomsmen" className="indivImage"/>
+          <div className="teamHover">
+            <div className="teamHoverText">
+              <p>B R I A N</p>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+
+
     </div>
 
   )}
