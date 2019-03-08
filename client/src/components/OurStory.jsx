@@ -22,7 +22,7 @@ function OurStory() {
         >
           <h4 className="vertical-timeline-element-subtitle">April 27, 2012 - First Move</h4>
           <p>
-            On her way home, Jenny noticed Stephen sitting a few seats away from her on the same bus. She decided to miss her usual stop to see where he would off and thankfully, it was the next stop! She casually got off after him and acted surprised when she bumped into him. Turns out that they literally lived 10 minutes from each other! That evening, Jenny decided to ask Stephen out on a date through Facebook, which he agreed to after 3 DAYS.
+            On her way home, Jenny noticed Stephen sitting a few seats away from her on the same bus. She decided to miss her usual stop to see where he would get off and thankfully, it was the next stop! She casually got off after him and acted surprised when she bumped into him. Turns out that they literally lived 10 minutes from each other! That evening, Jenny decided to ask Stephen out on a date through Facebook, which he agreed to after 3 DAYS.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -67,7 +67,7 @@ function OurStory() {
           className="vertical-timeline-element--education eventBox"
           date="Jenny: He doesn't even know how to play the piano! I was so impressed! ♥‿♥ I don't even know when he had the time to practice since we see each other pretty much everyday! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
         >
-          <h4 className="vertical-timeline-element-subtitle">January 28, 2012 - The Proposal</h4>
+          <h4 className="vertical-timeline-element-subtitle">January 28, 2018 - The Proposal</h4>
           <p>
             It was a very normal date night - They went to West Vancouver for some delicious pie and then Jenny took Stephen to her favorite Turkish restaurant. They came home and Stephen decorated the piano with lanterns he bought for her 6 years ago. Then he started playing "Stand By Me" on the piano, grabbed the ring and went down on one knee (cue the Awwwss!)
           </p>
