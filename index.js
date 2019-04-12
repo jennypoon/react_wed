@@ -64,7 +64,7 @@ app.post('/api/rsvp', (req,res) => {
           RSVP: ${req.body.rsvp === '1' ? (`Yes, coming!
           Total Seats Reserved: ${req.body.plusone}
           Guest Names: ${req.body.songs}
-          Comments:${req.body.comments}`) : "Sorry, can't make it" }
+          Mailing Address:${req.body.comments}`) : "Sorry, can't make it" }
 
           For complete RSVP list, visit: http://jennystephen.herokuapp.com/rsvp/admin`
       };
