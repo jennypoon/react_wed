@@ -34,6 +34,7 @@ class RsvpForm extends Component {
   }
 
   validateEmail(input) {
+    input = input.trim()
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(input).toLowerCase());
   }
@@ -102,7 +103,7 @@ class RsvpForm extends Component {
               <label className="rsvpColumn">
                 # of Seats to Reserve:
               </label>
-              <input className="rsvpColumn input" type="text" name="plusone" onChange={this.handleChange}></input><br/><br/>
+              <input className="rsvpColumn input" type="text" name="plusone" onChange={this.handleChange} required ></input><br/><br/>
 
               <label className="rsvpColumn">
                Full Name of Guests:
