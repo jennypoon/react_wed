@@ -19,12 +19,10 @@ class RSVP extends Component {
   }
 
   handleInvalidEmail(event) {
-    console.log(event)
     this.setState({invalidEmail: event})
   }
 
   render() {
-    console.log("RSVP STATE", this.state)
     return (
       <div className="rsvpComponent">
         {this.state.rsvp ? (
