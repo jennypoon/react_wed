@@ -35,7 +35,7 @@ class RSVP extends Component {
           </div>
           ) : (
           <div>
-            <h3>Please RSVP by May 1, 2019</h3>
+            <h3>Please RSVP by June 1, 2019</h3>
             <RsvpForm invalidState={this.state.invalidEmail}
                       handleClick= {this.handleClick}
                       invalidEmail= {this.handleInvalidEmail}
