@@ -28,7 +28,7 @@ function Faq() {
         Where is the event?
         </p>
         <p className="answer">
-        The reception is held at South Bonson Community Center and the ceremony will be held on the wharf nearby. There will be signs to direct you from the parking lot.
+        The reception is held at South Bonson Community Center and the ceremony will be held on the wharf nearby. When you arrive, just head to the venue to check in.
         </p> <br/>
         <img src={ceremonyLocation} width="100%" height="100%" alt="ceremony location" />
       </div>
@@ -62,7 +62,7 @@ function Faq() {
           What time should we arrive?
         </p>
         <p className="answer">
-          The ceremony starts at 4pm sharp. Please arrive by 3:45pm at the latest so you’re seated before it starts.
+          The ceremony starts at 4pm. Please arrive by 3:45pm and head to the venue to check-in.
         </p>
       </div>
 

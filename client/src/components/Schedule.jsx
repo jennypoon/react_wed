@@ -12,7 +12,7 @@ class Schedule extends Component {
         <div class="content">
           <h2>4:00PM | Ceremony</h2>
           <p>
-           Ceremony will start 4:00pm, please arrive no later than 3:45pm so you are properly seated before the show begins! The ceremony will be held at the wharf located near the venue, as shown in the map below:<br/><br/>
+           When you arrive on site, please head to the South Bonson venue to check in. Ceremony will start at 4:00pm and will be held at the wharf located near the venue, as shown in the map below:<br/><br/>
           <img class="imageCeremony" src={ceremonyLocation} alt="ceremony location" />
          </p>
       </div>
