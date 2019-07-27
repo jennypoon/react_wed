@@ -6,7 +6,6 @@ import Countdown from "./components/Countdown.jsx";
 import OurStory from "./components/OurStory.jsx";
 import Venue from "./components/Venue.jsx";
 import Schedule from "./components/Schedule.jsx";
-import RSVP from "./components/RSVP.jsx";
 import Faq from "./components/Faq.jsx";
 import Team from "./components/Team.jsx";
 import LoadingPage from "./LoadingPage.jsx";
@@ -38,23 +37,23 @@ class Home extends Component {
       <div className="tabStyle">
         <Tabs>
           <TabList>
-            <Tab> Our Story </Tab>
-            <Tab> The Venue </Tab>
             <Tab> Schedule </Tab>
+            <Tab> The Venue </Tab>
+            <Tab> Our Story </Tab>
             <Tab> VIPs </Tab>
             <Tab> FAQs </Tab>
           </TabList>
 
           <TabPanel>
-            <div className="storyComponent">
-              <OurStory />
-            </div>
+            <Schedule />
           </TabPanel>
           <TabPanel>
             <Venue />
           </TabPanel>
           <TabPanel>
-            <Schedule />
+            <div className="storyComponent">
+              <OurStory />
+            </div>
           </TabPanel>
           <TabPanel>
             <Team />

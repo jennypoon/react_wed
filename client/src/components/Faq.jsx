@@ -5,6 +5,61 @@ import parkingLocation from '../images/parking.png'
 function Faq() {
   return (
     <div>
+
+      <div className="questionComponent">
+        <p className="question">
+          What time should we arrive?
+        </p>
+        <p className="answer">
+          The ceremony starts at 4pm. Please arrive by 3:45pm and head to the venue to check-in.
+        </p>
+      </div>
+
+
+      <div className="questionComponent">
+        <p className="question">
+        Where is the event?
+        </p>
+        <p className="answer">
+        The reception is held at South Bonson Community Center and the ceremony will be held on the wharf nearby. When you arrive, just head to the venue to check in.
+        </p> <br/>
+        <img src={ceremonyLocation} width="100%" height="100%" alt="ceremony location" />
+      </div>
+
+      <div className="questionComponent">
+        <p className="question">
+          Do you have a registry?
+        </p>
+        <p className="answer">
+          With all that we have, we've been truly blessed. Your presence and good wishes are all that we request! But if you desire to give nonetheless, Monetary gift is the one we suggest.
+        </p>
+      </div>
+
+
+      <div className="questionComponent">
+        <p className="question">
+          Is there parking?
+        </p>
+        <p className="answer">
+          Yes! Parking is free. Please print this <a href="https://docs.google.com/document/d/1FIkEgIjHucjm_Y0VeZA-qo69UYID61Srx4NWYGFuEns/edit?usp=sharing" target="_blank" rel="noopener noreferrer">parking pass</a> and place it on your dashboard when you come.
+          You can park anywhere highlighed in red:
+        </p>
+        <br/>
+        <img src={parkingLocation} width="100%" height="100%" alt="parking location" />
+        <p>
+          We highly recommend that you carpool. Not because it’s environmentally good to do so and will reduce your carbon footprint, parking is rather limited, unless you don’t mind walking a bit.
+        </p>
+      </div>
+
+      <div className="questionComponent">
+        <p className="question">
+          What food will be served?
+        </p>
+        <p className="answer">
+          Western buffet style! We are aware of most of our guests dietary restrictions and we will do our best to accommodate.
+        </p>
+      </div>
+
       <div className="questionComponent">
         <p className="question">
           Can we bring our kids?
@@ -25,62 +80,10 @@ function Faq() {
 
       <div className="questionComponent">
         <p className="question">
-        Where is the event?
-        </p>
-        <p className="answer">
-        The reception is held at South Bonson Community Center and the ceremony will be held on the wharf nearby. When you arrive, just head to the venue to check in.
-        </p> <br/>
-        <img src={ceremonyLocation} width="100%" height="100%" alt="ceremony location" />
-      </div>
-
-      <div className="questionComponent">
-        <p className="question">
-          Is there parking?
-        </p>
-        <p className="answer">
-          Yes! Parking is free. Please print this <a href="https://docs.google.com/document/d/1FIkEgIjHucjm_Y0VeZA-qo69UYID61Srx4NWYGFuEns/edit?usp=sharing" target="_blank" rel="noopener noreferrer">parking pass</a> and place it on your dashboard when you come.
-          You can park anywhere highlighed in red:
-        </p>
-        <br/>
-        <img src={parkingLocation} width="100%" height="100%" alt="parking location" />
-        <p>
-          We highly recommend that you carpool. Not because it’s environmentally good to do so and will reduce your carbon footprint, parking is rather limited, unless you don’t mind walking a bit.
-        </p>
-      </div>
-
-      <div className="questionComponent">
-        <p className="question">
           The venue is in Pitt Meadows?! Omg so far... why?
         </p>
         <p className="answer">
         Why not?! Get away from the crazy traffic and enjoy the calmness of the Fraser River. You’ll be surprised to know there is life outside of Vancouver and Burnaby! I promise you, the suburbs are very civilized.
-        </p>
-      </div>
-
-      <div className="questionComponent">
-        <p className="question">
-          What time should we arrive?
-        </p>
-        <p className="answer">
-          The ceremony starts at 4pm. Please arrive by 3:45pm and head to the venue to check-in.
-        </p>
-      </div>
-
-      <div className="questionComponent">
-        <p className="question">
-          Do you have a registry?
-        </p>
-        <p className="answer">
-          With all that we have, we've been truly blessed. Your presence and good wishes are all that we request! But if you desire to give nonetheless, Monetary gift is the one we suggest.
-        </p>
-      </div>
-
-      <div className="questionComponent">
-        <p className="question">
-          What food will be served?
-        </p>
-        <p className="answer">
-          Western buffet style! We are aware of most of our guests dietary restrictions and we will do our best to accommodate.
         </p>
       </div>
   </div>
