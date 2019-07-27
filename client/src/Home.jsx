@@ -41,7 +41,6 @@ class Home extends Component {
             <Tab> Our Story </Tab>
             <Tab> The Venue </Tab>
             <Tab> Schedule </Tab>
-            <Tab> RSVP </Tab>
             <Tab> VIPs </Tab>
             <Tab> FAQs </Tab>
           </TabList>
@@ -56,9 +55,6 @@ class Home extends Component {
           </TabPanel>
           <TabPanel>
             <Schedule />
-          </TabPanel>
-          <TabPanel>
-            <RSVP />
           </TabPanel>
           <TabPanel>
             <Team />
